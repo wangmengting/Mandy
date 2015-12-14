@@ -14,9 +14,9 @@ div{ -webkit-user-select:none; width:200px; height:200px; background:#ccc; margi
 <script>
 $(function(){
     
-    // $(document).on("touchstart",function(ev){
-    //     ev.preventDefault();    
-    // });
+    $(document).on("touchend",function(ev){
+        ev.preventDefault();    
+    });
     
     
     //'swipe', 'swipeLeft', 'swipeRight', 'swipeUp', 'swipeDown',
