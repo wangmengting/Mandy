@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="author" content="智能社 - zhinengshe.com" />
 <meta name="copyright" content="智能社 - zhinengshe.com" />
 <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
@@ -10,13 +10,17 @@
 *{margin:0;padding: 0;}
 
 div{ width:200px; height:200px; background:#ccc; margin:0 auto; margin-top:10px; }
-.page{overflow: auto;overflow-x:hidden;min-height: 100%;position: absolute;width: 100%;background: pink;top:0;left: 0;}
+.page{overflow: auto;overflow-x:hidden;min-height: 70%;position: absolute;width: 100%;background: pink;top:0;left: 0;}
 </style>
 <script src="js/zepto.min.js"></script>
 <script src="js/touch.js"></script>
 <script>
 $(function(){
     
+    // $(document).on("touchstart",function(ev){
+    //     ev.preventDefault();    
+    // });
+
     $("body").on("touchmove",function(){
         return false;
     });
