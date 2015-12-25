@@ -1,0 +1,534 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+        <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+        <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-touch-fullscreen" content="yes">
+        <meta name="full-screen" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="format-detection" content="address=no">
+        <title>我的朋友圈</title>
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+        <meta content="" name="robots">
+        <!-- head css -->
+        
+    <!-- <link href="style_v3.css" rel="stylesheet" type="text/css" /> -->
+    <link href="style.css" rel="stylesheet" type="text/css" >
+
+        <!-- head js -->
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="js/Images.js"></script>
+    <script src="js/mtool.js"></script>        
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+
+    </head>
+    <body>
+        <!-- 主体 -->
+    <div class="paga">   
+    <header class="_show">
+        <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/bg.jpg" id="bg">
+        <p class="data-name" id="user-name">天悟</p>
+        <img src="http://wx.qlogo.cn/mmopen/zy3UYWiczjGZZWOicclsiamOqicFuAKCVg9hDrzP7PaVxZzv3HquZnQYnCXMFRf9Ub5F8b6ribZcqeeAysicEKQ4jhfUSsqianuu8Qf/0" class="data-avt" id="avt">
+    </header>
+
+    <div id="main">
+
+        <div class="normal_loading">
+            <div class="box other">
+                <div class="loading show">
+                    <img class="stars" src="http://s.juancdn.com/jpwebapp/images/icon/stars.png" style="width:36px;">
+                    <div class="shade"></div>
+                </div>
+                <p class="txt">正在加载中...</p>
+            </div>
+        </div>
+
+        <div id="list" class="_show" >
+            <ul id="man">
+                <li>
+                    <div class="po-avt-wrap">
+                        <img src="http://wx.qlogo.cn/mmopen/zy3UYWiczjGZZWOicclsiamOqicFuAKCVg9hDrzP7PaVxZzv3HquZnQYnCXMFRf9Ub5F8b6ribZcqeeAysicEKQ4jhfUSsqianuu8Qf/0" class="po-avt data-avt">
+                    </div>
+                    <div class="po-cmt">
+                        <div class="po-hd">
+                            <p class="po-name"><span class="data-name">天悟</span></p>
+                            <p class="post">谢谢圆圆给我一个难忘的圣诞！今天的巴黎，好美，爱你么么哒 @高圆圆</p>
+                            <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/christmas/01.jpg" class="list-img">
+                            <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/christmas/04.png" class="list-img">
+                            <p class="time">刚刚</p><img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/c.png" class="c-icon">
+                        </div>
+                        <div class="r"></div>
+                        <div class="cmt-wrap">
+                            <div class="like"><img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/l.png">高圆圆，李易峰，杨幂，王凯，宁泽涛，钟汉良，王思聪，霍建华</div>
+                            <div class="cmt-list">
+                                <p><span>高圆圆：</span>和你在一起，我很开心。宝贝圣诞快乐</p>
+                                <p><span class="data-name">天悟</span>回复<span>高圆圆</span>：我也是~</p>
+                                <p><span>王思聪：</span>求赵又廷的心理阴影面积</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="po-avt-wrap">
+                        <img src="http://wx.qlogo.cn/mmopen/zy3UYWiczjGZZWOicclsiamOqicFuAKCVg9hDrzP7PaVxZzv3HquZnQYnCXMFRf9Ub5F8b6ribZcqeeAysicEKQ4jhfUSsqianuu8Qf/0" class="po-avt data-avt">
+                    </div>
+                    <div class="po-cmt">
+                        <div class="po-hd">
+                            <p class="po-name"><span class="data-name">天悟</span></p>
+                            <p class="post">除了有钱和英俊，我一无所有。不过没关系，因为我#主要看气质#
+                                <img src="http://wx.qlogo.cn/mmopen/zy3UYWiczjGZZWOicclsiamOqicFuAKCVg9hDrzP7PaVxZzv3HquZnQYnCXMFRf9Ub5F8b6ribZcqeeAysicEKQ4jhfUSsqianuu8Qf/0" class="data-avt">
+                            </p>
+                            <p class="time">1分钟前</p><img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/c.png" class="c-icon">
+                        </div>
+                        <div class="r"></div>
+                        <div class="cmt-wrap">
+                            <div class="like"><img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/l.png">林志玲，范冰冰，王凯，胡歌，霍建华，杨幂，赵丽颖</div>
+                            <div class="cmt-list">
+                                <p><span>林志玲：</span>你很有气质，这也是我选择你的原因</p>
+                                <p><span class="data-name">天悟</span>回复<span>林志玲</span>：么么哒</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="po-avt-wrap">
+                        <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/wanghon/01.jpg" class="po-avt">
+                    </div>
+                    <div class="po-cmt">
+                        <div class="po-hd">
+                            <p class="po-name">宁泽涛</p>
+                            <p class="post"><span class="data-name">天悟</span>，快来跟我与TF-BOYS组成小鲜肉联盟，在今年春晚上共同合唱《难忘今宵》。
+                                <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/wanghon/01-1.jpg">
+                            </p>
+                            <p class="time">1小时前</p><img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/c.png" class="c-icon">
+                        </div>
+                        <div class="r"></div>
+                        <div class="cmt-wrap">
+                            <div class="like"><img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/l.png"><span class="data-name">天悟</span>，王源，王俊凯，易烊千玺，杨洋，林志玲，范冰冰</div>
+                            <div class="cmt-list">
+                                <p><span class="data-name">天悟</span>：我们颜值都那么高，不会让观众的电视机都爆了吧</p>
+                                <p><span>宁泽涛</span>回复<span class="data-name">天悟</span>：低调，低调</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="po-avt-wrap">
+                        <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/wanghon/02.jpg" class="po-avt">
+                    </div>
+                    <div class="po-cmt">
+                        <div class="po-hd">
+                            <p class="po-name">杨幂</p>
+                            <p class="post">你们谁也别想黑我家<span class="data-name">天悟</span>，谁黑他就是想红！
+                                <img src="http://wx.qlogo.cn/mmopen/zy3UYWiczjGZZWOicclsiamOqicFuAKCVg9hDrzP7PaVxZzv3HquZnQYnCXMFRf9Ub5F8b6ribZcqeeAysicEKQ4jhfUSsqianuu8Qf/0" class="data-avt">
+                            </p>
+                            <p class="time">2小时前</p><img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/c.png" class="c-icon">
+                        </div>
+                        <div class="r"></div>
+                        <div class="cmt-wrap">
+                            <div class="like"><img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/l.png">刘恺威，胡歌，冯绍峰，唐嫣，贾乃亮，刘烨，霍建华，王思聪</div>
+                            <div class="cmt-list">
+                                <p><span class="data-name">天悟</span>：我觉得我很委屈</p>
+                                <p><span>王思聪</span>回复<span class="data-name">天悟</span>：人红是非多，兄弟挺住！</p>
+                                <p><span>刘恺威</span>：。。。</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="po-avt-wrap">
+                        <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/wanghon/03.jpg" class="po-avt">
+                    </div>
+                    <div class="po-cmt">
+                        <div class="po-hd">
+                            <p class="po-name">林志玲</p>
+                            <p class="post"><span class="data-name">天悟</span>，你送我毛呢大衣我收到了，很喜欢，卷皮上的衣服果然好看。明天我们一块吃晚餐吧，还是老地方，等你哦！这次千万要小心，别再让狗仔抓到了哦
+                                <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/wanghon/03-1.jpg">
+                            </p>
+                            <p class="time">2小时前</p><img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/c.png" class="c-icon">
+                        </div>
+                        <div class="r"></div>
+                        <div class="cmt-wrap">
+                            <div class="like"><img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/l.png"><span class="data-name">天悟</span>，王思聪，林俊杰，邓超，黄晓明，陈冠希，熊黛林，高圆圆，柳岩</div>
+                            <div class="cmt-list">
+                                <p><span>周杰伦</span>：哎哟不错哦</p>
+                                <p><span class="data-name">天悟</span>：知道啦，上次被偷拍真是大写的尴尬</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="po-avt-wrap">
+                        <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/wanghon/03.jpg" class="po-avt data-avt">
+                    </div>
+                    <div class="po-cmt">
+                        <div class="po-hd">
+                            <p class="po-name data-name"></p>
+                            <p class="post">可恶！谁偷拍我跟志玲的照片还放到朋友圈上的！
+                                <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/wanghon/04.jpg">
+                            </p>
+                            <p class="time">3小时前</p><img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/c.png" class="c-icon">
+                        </div>
+                        <div class="r"></div>
+                        <div class="cmt-wrap">
+                            <div class="like"><img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/l.png">赵薇，王菲，胡歌，林志玲，范冰冰，刘亦菲，邓超</div>
+                            <div class="cmt-list">
+                                <p><span>林志玲</span>：下次牵手要慢一点</p>
+                                <p><span class="data-name">天悟</span>回复<span>林志玲</span>：看我把狗仔找出来不削他</p>
+                                <p><span>邓超</span>回复<span>林志玲</span>：快带上<i class="data-name">天悟</i>上跑男四！</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="po-avt-wrap">
+                        <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/wanghon/juanpi.png" class="po-avt">
+                    </div>
+                    <div class="po-cmt">
+                        <div class="po-hd">
+                            <p class="ads">推广<img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/ads.png" ></p>
+                            <p class="po-name">卷皮</p>
+                            <div class="post">万万没想到，今年圣诞居然准备了这么多惊喜。长按二维码立即查看
+                                <p>
+                                    <a href="http://mp.weixin.qq.com/s?__biz=MjM5MDk1NjY0MA==&mid=402311636&idx=2&sn=35581e3c9fca720903919a0e23bf4846#rd" class="ad-link">查看详情 <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/link.png"></a>
+                                </p>
+                                <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/christmas/slogan.jpg" class="list-img">
+                                <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/wanghon/juanpi-1.jpg" class="list-img">
+                            </div>
+                            <p class="time">3小时前</p><img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/c.png" class="c-icon">
+                        </div>
+                        <div class="r"></div>
+                        <div class="cmt-wrap">
+                            <div class="like"><img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/l.png"><span class="data-name">天悟</span>，杨幂，王思聪，胡歌，霍建华，王凯，宁泽涛，杨洋，邓超</div>
+                            <div class="cmt-list">
+                                <p><span>林志玲</span>：<i class="data-name">天悟</i>，圣诞节送我的大衣就是在这买的吗？</p>
+                                <p><span class="data-name">天悟</span>回复<span>林志玲</span>：对呀，超赞的！</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="po-avt-wrap">
+                        <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/wanghon/05.jpg" class="po-avt">
+                    </div>
+                    <div class="po-cmt">
+                        <div class="po-hd">
+                            <p class="po-name">郭碧婷</p>
+                            <p class="post">这样吃饭要慢点@<span class="data-name">天悟</span>
+                                <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/wanghon/05-1.jpg">
+                            </p>
+                            <p class="time">4小时前</p><img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/c.png" class="c-icon">
+                        </div>
+                        <div class="r"></div>
+                        <div class="cmt-wrap">
+                            <div class="like"><img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/l.png">王思聪，唐嫣，马天宇，马可，陈伟霆，陈乔恩，杨幂，刘诗诗</div>
+                            <div class="cmt-list">
+                                <p><span>林更新</span>：歪，幺幺零吗？对，还是老地方，他们又在虐狗了</p>
+                                <p><span>王思聪</span>：那就祝你们幸福咯</p>
+                                <p><span>郭富城</span>：我才是正版的好吗</p>
+                                <p><span class="data-name">天悟</span>：如果我不是网红你还会爱我吗？</p>
+                                <p><span>郭碧婷</span>回复<span class="data-name">天悟</span>：我不在乎你是不是网红，反正没我红！</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="po-avt-wrap">
+                        <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/wanghon/nv05.jpg" class="po-avt">
+                    </div>
+                    <div class="po-cmt">
+                        <div class="po-hd">
+                            <p class="po-name">金星</p>
+                            <p class="post">金姐今天为大伙爆料一下<span class="data-name">天悟</span>的私生活！作为一个不缺钱的美男子，<span class="data-name">天悟</span>的一大爱好就是买买买。除了香奈儿爱马仕Gucci阿玛尼Prada。<span class="data-name">天悟</span>还喜欢在卷皮买一些好看不贵的衣服送给女票。而<span class="data-name">天悟</span>最大的烦恼则是太过英俊常被搭讪，50米的路要走一个小时。
+                                <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/wanghon/nv05-1.jpg">
+                            </p>
+                            <p class="time">5小时前</p><img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/c.png" class="c-icon">
+                        </div>
+                        <div class="r"></div>
+                        <div class="cmt-wrap">
+                            <div class="like"><img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/l.png">王祖蓝，<span class="data-name">天悟</span>，王珞丹，邓超，黄晓明，范冰冰，angelbaby，胡歌，杨幂，王思聪，郑恺，谢娜，王凯，刘亦菲</div>
+                            <div class="cmt-list">
+                                <p><span class="data-name">天悟</span>：金姐，你知道的太多了</p>
+                                <p><span>金星</span>：大家快点赞呀，点赞满100我这还有更劲爆的</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="po-avt-wrap">
+                        <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/wanghon/nv05.jpg" class="po-avt data-avt">
+                    </div>
+                    <div class="po-cmt">
+                        <div class="po-hd">
+                            <p class="po-name data-name"></p>
+                            <p class="post">还是没抢到票，我开始方了！验证码输了10遍都不对，没错，我是生活的弱者！我决定明天就去医院修复我的钛合金双眼
+                                <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/wanghon/06.jpg">
+                            </p>
+                            <p class="time">5小时前</p><img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/c.png" class="c-icon">
+                        </div>
+                        <div class="r"></div>
+                        <div class="cmt-wrap">
+                            <div class="like"><img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/l.png">卷皮，铁道部客服，白百合，杨臣刚，孙楠，王珞丹，王大治</div>
+                            <div class="cmt-list">
+                                <p><span>王思聪</span>：没事儿，抢不到票来哥这！哥派私人飞机去接你</p>
+                                <p><span class="data-name">天悟</span>回复<span>王思聪</span>：好哒，我行李都收拾好了随时能走！</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <ul id="woman" style="display: none">
+                <li>
+                    <div class="po-avt-wrap">
+                        <img class="po-avt data-avt" src="http://s.juancdn.com/jpwebapp/images/pengyouquan/n1.jpg">
+                    </div>
+                    <div class="po-cmt">
+                        <div class="po-hd">
+                            <p class="po-name data-name"></p>
+                            <p class="post">谢谢峰峰给我一个难忘的圣诞！今天的巴黎，好美，爱你么么哒 @李易峰</p>
+                            <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/christmas/01.jpg" class="list-img">
+                            <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/christmas/02.png" class="list-img">
+                            <p class="time">刚刚</p><img class="c-icon" src="http://s.juancdn.com/jpwebapp/images/pengyouquan/c.png">
+                        </div>
+                        <div class="r"></div>
+                        <div class="cmt-wrap">
+                            <div class="like"><img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/l.png">李易峰，杨幂，王凯，宁泽涛，钟汉良，王思聪，霍建华</div>
+                            <div class="cmt-list">
+                                <p><span>李易峰</span>：和你在一起，我很开心。宝贝圣诞快乐</p>
+                                <p><span class="data-name">天悟</span>回复<span>李易峰</span>：我也是~</p>
+                                <p><span>王思聪</span>：求霍建华的心理阴影面积，<i class="data-name">测试号</i>你劈腿也太快了</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="po-avt-wrap">
+                        <img class="po-avt data-avt" src="http://s.juancdn.com/jpwebapp/images/pengyouquan/n1.jpg">
+                    </div>
+                    <div class="po-cmt">
+                        <div class="po-hd">
+                            <p class="po-name data-name">都敏俊</p>
+                            <p class="post">除了有钱和美貌，我一无所有。不过没关系，因为我#主要看气质#
+                                <img src="http://wx.qlogo.cn/mmopen/zy3UYWiczjGZZWOicclsiamOqicFuAKCVg9hDrzP7PaVxZzv3HquZnQYnCXMFRf9Ub5F8b6ribZcqeeAysicEKQ4jhfUSsqianuu8Qf/0" class="data-avt">
+                            </p>
+                            <p class="time">1分钟前</p><img class="c-icon" src="http://s.juancdn.com/jpwebapp/images/pengyouquan/c.png">
+                        </div>
+                        <div class="r"></div>
+                        <div class="cmt-wrap">
+                            <div class="like"><img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/l.png">王凯，胡歌，霍建华，马建国，赵丽颖</div>
+                            <div class="cmt-list">
+                                <p><span>王凯：</span>你很有气质，这也是我选择你的原因</p>
+                                <p><span class="data-name">天悟</span>回复<span>王凯</span>：么么哒</p>
+                                <p><span>靳东</span>回复<span>王凯</span>：怎么回事？网友不是说你和胡歌在一起了吗？</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="po-avt-wrap">
+                        <img class="po-avt" src="http://s.juancdn.com/jpwebapp/images/pengyouquan/wanghon/nv01.jpg">
+                    </div>
+                    <div class="po-cmt">
+                        <div class="po-hd">
+                            <p class="po-name">李晨</p>
+                            <p class="post">听说<span class="data-name">天悟</span>被嘲笑笑点低而与范冰冰闹不和？我就知道，就算颜值超过我冰，笑点跟我冰比，还差得远呢！</p>
+                            <img src="http://wx.qlogo.cn/mmopen/zy3UYWiczjGZZWOicclsiamOqicFuAKCVg9hDrzP7PaVxZzv3HquZnQYnCXMFRf9Ub5F8b6ribZcqeeAysicEKQ4jhfUSsqianuu8Qf/0" class="data-avt list-img">
+                            <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/wanghon/nv01-1.jpg" class="list-img">
+                            <p class="time">2分钟前</p><img class="c-icon" src="http://s.juancdn.com/jpwebapp/images/pengyouquan/c.png">
+                        </div>
+                        <div class="r"></div>
+                        <div class="cmt-wrap">
+                            <div class="like"><img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/l.png">杨幂，赵丽颖，范冰冰，李冰冰，张馨予，王思聪</div>
+                            <div class="cmt-list">
+                                <p><span class="data-name">天悟</span><span>：</span>谁在黑我？</p>
+                                <p><span>王思聪</span>回复<span class="data-name">天悟</span>：正所谓人红是非多，宝宝别理他们</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="po-avt-wrap">
+                        <img class="po-avt" src="http://s.juancdn.com/jpwebapp/images/pengyouquan/wanghon/nv03.jpg">
+                    </div>
+                    <div class="po-cmt">
+                        <div class="po-hd">
+                            <p class="po-name">孙俪</p>
+                            <p class="post">其实<span class="data-name">天悟</span>也曾是芈月的候选人之一。<span class="data-name">天悟</span>在颜值和演技上都没问题，但你的饭量实在太大了，这会大大增加拍摄成本，按照剧组的预算，你最多只能活到第2集。
+                                <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/wanghon/nv03-1.jpg">
+                            </p>
+                            <p class="time">10分钟前</p><img class="c-icon" src="http://s.juancdn.com/jpwebapp/images/pengyouquan/c.png">
+                        </div>
+                        <div class="r"></div>
+                        <div class="cmt-wrap">
+                            <div class="like"><img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/l.png">蒋欣，孙俪，方中信，刘涛，黄轩，高云翔</div>
+                            <div class="cmt-list">
+                                <p><span>蒋欣</span>：没能和<i class="data-name">天悟</i>这么优秀的青年演员合作，真的很可惜。好妹妹，下次有机会姐赏你二丈红</p>
+                                <p><span>刘涛</span>：<i class="data-name">天悟</i>，还是少吃点好</p>
+                                <p><span class="data-name">天悟</span>：怪我咯</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="po-avt-wrap">
+                        <img class="po-avt" src="http://s.juancdn.com/jpwebapp/images/pengyouquan/wanghon/nv04.jpg">
+                    </div>
+                    <div class="po-cmt">
+                        <div class="po-hd">
+                            <p class="po-name">邓超</p>
+                            <p class="post">作为网红界泰斗级人物，我代表跑男四剧组向<span class="data-name">天悟</span>发出真诚的邀请，希望你可以加入我们，we are family！
+                                <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/wanghon/nv04-1.jpg">
+                            </p>
+                            <p class="time">1小时前</p><img class="c-icon" src="http://s.juancdn.com/jpwebapp/images/pengyouquan/c.png">
+                        </div>
+                        <div class="r"></div>
+                        <div class="cmt-wrap">
+                            <div class="like"><img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/l.png">angelbaby，王祖蓝，鹿晗，郑恺，孙俪，刘涛</div>
+                            <div class="cmt-list">
+                                <p><span class="data-name">天悟</span>：超哥，这次不约，我档期满了</p>
+                                <p><span>邓超</span>回复<span class="data-name">天悟</span>：没事，我等你</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="po-avt-wrap">
+                        <img class="po-avt" src="http://s.juancdn.com/jpwebapp/images/pengyouquan/wanghon/nv05.jpg">
+                    </div>
+                    <div class="po-cmt">
+                        <div class="po-hd">
+                            <p class="po-name">金星</p>
+                            <p class="post">金姐今天为大伙爆料一下<span class="data-name">天悟</span>的私生活！作为一个不缺钱的美女子，<span class="data-name">天悟</span>的一大爱好就是买买买。除了香奈儿爱马仕Gucci阿玛尼Prada，<span class="data-name">天悟</span>还喜欢在卷皮买一些好看不贵的衣服。而<span class="data-name">天悟</span>最大的烦恼则是因貌美如花常被搭讪，50米的路要走一个小时。
+                                <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/wanghon/nv05-1.jpg">
+                            </p>
+                            <p class="time">1小时前</p><img class="c-icon" src="http://s.juancdn.com/jpwebapp/images/pengyouquan/c.png">
+                        </div>
+                        <div class="r"></div>
+                        <div class="cmt-wrap">
+                            <div class="like"><img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/l.png">王祖蓝，<span class="data-name">天悟</span>，王珞丹，邓超，黄晓明，范冰冰，angelbaby，胡歌，杨幂，王思聪，郑恺，谢娜，王凯，刘亦菲</div>
+                            <div class="cmt-list">
+                                <p><span class="data-name">天悟</span>：金姐，你知道的太多了</p>
+                                <p><span>金星</span>：大家快点赞呀，点赞满100我这还有更劲爆的</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="po-avt-wrap">
+                        <img class="po-avt" src="http://s.juancdn.com/jpwebapp/images/pengyouquan/wanghon/nv02.jpg">
+                    </div>
+                    <div class="po-cmt">
+                        <div class="po-hd">
+                            <p class="po-name">胡歌</p>
+                            <p class="post">你们谁也别想黑我家<span class="data-name">天悟</span>，谁黑她就是想红！
+                                <img src="http://wx.qlogo.cn/mmopen/zy3UYWiczjGZZWOicclsiamOqicFuAKCVg9hDrzP7PaVxZzv3HquZnQYnCXMFRf9Ub5F8b6ribZcqeeAysicEKQ4jhfUSsqianuu8Qf/0" class="data-avt">
+                            </p>
+                            <p class="time">2小时前</p><img class="c-icon" src="http://s.juancdn.com/jpwebapp/images/pengyouquan/c.png">
+                        </div>
+                        <div class="r"></div>
+                        <div class="cmt-wrap">
+                            <div class="like"><img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/l.png"><span class="data-name">天悟</span>，王俊凯，井柏然，霍建华，张馨予，杨洋</div>
+                            <div class="cmt-list">
+                                <p><span class="data-name">天悟</span><span>：</span>我觉得很委屈。</p>
+                                <p><span>靳东</span>：虽然我跟<i class="data-name">天悟</i>不熟，但是老胡说的就是对的！</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="po-avt-wrap">
+                        <img class="po-avt" src="http://s.juancdn.com/jpwebapp/images/pengyouquan/christmas/03.png">
+                    </div>
+                    <div class="po-cmt">
+                        <div class="po-hd">
+                            <p class="po-name">霍建华</p>
+                            <p class="post">这样吃饭要慢点@<span class="data-name">天悟</span>
+                                <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/wanghon/nv06-1.jpg">
+                            </p>
+                            <p class="time">2小时前</p><img class="c-icon" src="http://s.juancdn.com/jpwebapp/images/pengyouquan/c.png">
+                        </div>
+                        <div class="r"></div>
+                        <div class="cmt-wrap">
+                            <div class="like"><img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/l.png">胡歌，唐嫣，马天宇，马可，陈伟霆，陈乔恩，林志玲，刘诗诗</div>
+                            <div class="cmt-list">
+                                <p><span>林更新</span>：歪，幺幺零吗？对，还是老地方，他们又在虐狗了</p>
+                                <p><span>杨幂</span>：圣诞节也来秀恩爱嘤嘤嘤</p>
+                                <p><span>唐嫣</span>：那就祝你们幸福咯</p>
+                                <p><span>郭富城</span>：我才是正版的好吗</p>
+                                <p><span class="data-name">天悟</span>：如果我不是网红你还会爱我吗？</p>
+                                <p><span>霍建华</span>回复<span class="data-name">天悟</span>：真是个傻丫头</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="po-avt-wrap">
+                        <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/wanghon/juanpi.png" class="po-avt">
+                    </div>
+                    <div class="po-cmt">
+                        <div class="po-hd">
+                            <p class="ads">推广<img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/ads.png" ></p>
+                            <p class="po-name">卷皮</p>
+                            <div class="post">万万没想到，今年圣诞居然准备了这么多惊喜。长按二维码立即查看
+                                <p>
+                                    <a href="http://mp.weixin.qq.com/s?__biz=MjM5MDk1NjY0MA==&mid=402311636&idx=2&sn=35581e3c9fca720903919a0e23bf4846#rd" class="ad-link">查看详情 <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/link.png"></a>
+                                </p>
+                                <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/christmas/slogan.jpg" class="list-img">
+                                <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/wanghon/juanpi-1.jpg" class="list-img">
+                            </div>
+                            <p class="time">2小时前</p><img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/c.png" class="c-icon">
+                        </div>
+                        <div class="r"></div>
+                        <div class="cmt-wrap">
+                            <div class="like"><img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/l.png"><span class="data-name">天悟</span>，杨幂，王思聪，胡歌，霍建华，王凯，宁泽涛，杨洋，邓超</div>
+                            <div class="cmt-list">
+                                <p><span class="data-name">天悟</span>：我想我们之间唯一的联系，大概就是我们都是剁手党重症患者了吧</p>
+                                <p><span>王思聪</span>回复<span class="data-name">天悟</span>：有我在，你的病就不用好</p>
+                                <p><span>卷皮</span>回复<span>王思聪</span>：我就是喜欢你看不惯我，却依然感慨我的折扣那么多把我爱得死去活来的样子。</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="po-avt-wrap">
+                        <img class="po-avt data-avt" src="http://s.juancdn.com/jpwebapp/images/pengyouquan/wanghon/nv06.jpg">
+                    </div>
+                    <div class="po-cmt">
+                        <div class="po-hd">
+                            <p class="po-name data-name">霍建华</p>
+                            <p class="post">还是没抢到票，我开始方了！验证码输了10遍都不对，没错，我是生活的弱者！我决定明天就去医院修复我的钛合金双眼
+                                <img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/wanghon/nv07.jpg">
+                            </p>
+                            <p class="time">3小时前</p><img class="c-icon" src="http://s.juancdn.com/jpwebapp/images/pengyouquan/c.png">
+                        </div>
+                        <div class="r"></div>
+                        <div class="cmt-wrap">
+                            <div class="like"><img src="http://s.juancdn.com/jpwebapp/images/pengyouquan/l.png">卷皮，铁道部客服，白百合，杨臣刚，孙楠，王珞丹，王大治</div>
+                            <div class="cmt-list">
+                                <p><span>王思聪</span>：没事儿，抢不到票来哥这！哥派私人飞机去接你</p>
+                                <p><span class="data-name">天悟</span>回复<span>王思聪</span>：好哒，我行李都收拾好了随时能走！</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div  id="share" class="_show">
+            <a href="http://m.juanpi.com/event/pengyouquan">生成朋友圈</a><a id="share_add">惊呆小伙伴</a>
+            <p>（此朋友圈纯属虚构）</p>
+        </div>
+        <div class="hide" id="guide"></div>
+    </div>
+</div> 
+        
+    <script type="text/javascript" src="js/pg-pengyouquan.js"></script>
+
+    </body>
+</html>
