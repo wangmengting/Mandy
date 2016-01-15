@@ -1237,16 +1237,16 @@ opacity:1;
 .page2{ background-image: url(images/bg01.jpg);-webkit-background-size: 100% auto;background-size: 100% auto;  }
 
 .page3{ background-image: url(images/bg01.jpg); -webkit-background-size: 100% auto;background-size: 100% auto; }
-.page3 img.no1 {top:13%;}
-.page3 img.no2 {top:42%;width: 90%;left:5%;}
+.page3 img.no1 {top:10%;}
+.page3 img.no2 {top:40%;width: 90%;left:5%;}
 
 .page4{ background-image: url(images/bg01.jpg);-webkit-background-size: 100% auto;background-size: 100% auto; }
-.page4 img.no1 { top: 10%;}
+.page4 img.no1 { top: 7%;}
 .page4 img.no2 {top:38%;width: 94%;left:3%;}
 
 .page5,.page7 { background-image: url(images/bg01.jpg);-webkit-background-size: 100% auto;background-size: 100% auto; }
-.page5 .box ,.page7 .box{ top: 45%;text-align: center;}
-.page5 img.no1,.page7 img.no1 { top: 13%;}
+.page5 .box ,.page7 .box{ top: 40%;text-align: center;}
+.page5 img.no1,.page7 img.no1 { top: 10%;}
 .page5 img.no2,.page7 img.no2 {width:90%; margin-bottom: 10px;}
 .page5 img.no3{width:85%; }
 .page7 img.no3 {width:100%; }
@@ -1254,7 +1254,7 @@ opacity:1;
 .page6 { background-image: url(images/bg01.jpg);-webkit-background-size: 100% auto;background-size: 100% auto; }
 .page6 .box { top: 42%;text-align: center;}
 .page6 .box{  font: 40px "Microsoft Yahei";}
-.page6 img.no1 { top: 15%;}
+.page6 img.no1 { top: 10%;}
 
 
 .page8 { background:#000;-webkit-background-size: 100% auto;background-size: 100% auto; }
@@ -1268,7 +1268,7 @@ opacity:1;
 .section { text-align: center; font: 50px "Microsoft Yahei";   position:relative; overflow:hidden}
 img{ width:100%}
 .active .bg{  position: relative; z-index:1; top:0; left:0;width:125%}
-.name{ position: absolute; z-index:2; width:80%; left:10%; top:18%; }
+.name{ position: absolute; z-index:2; width:80%; left:10%; top:15%; }
 .name02{ position: absolute; z-index:2; width:80%; right:10%; bottom:18%; }
 
 /*我加的音乐样式*/
