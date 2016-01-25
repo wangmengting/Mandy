@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style type="text/css">
+	.box01{width: 100px;height: 150px;background: pink;}
+	.cur{background: red;}
+	.hammer{width: 35px;height: 100px;background: green;-webkit-transform:rotate(-35deg);position: absolute;left: 100px;top: 100px;}
+
+</style>
+<body>
+ <div class="box01"></div>
+ <div class="hammer"></div>
+ <input type="button" value="出拳" class="btn">
+</body>
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+window.onload = function(){
+function cLick(obj) {
+
+    var _this = obj;
+
+		// if(_this.hasClass("curr")){
+
+  //           alert("蛋都碎了，别砸了！");
+
+  //           return false;
+
+  //       }
+ 		$(".box01").addClass('cur');
+        $(".hammer").animate({
+
+            "top":_this.position().top-100,
+
+            "left":_this.position().left-50
+
+            },50,function(){
+
+               $(".hammer").css({"left": 100,"top": 100});
+
+               $(".box01").removeClass('cur');
+
+            }
+
+        );
+
+    
+
+}
+
+
+$(".btn").click(function() {
+
+    cLick($(this).siblings('.hammer'));
+
+});
+
+	}
+</script>
+</html>
