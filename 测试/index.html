@@ -19,8 +19,9 @@
  <input type="button" value="出拳" class="btn">
 </body>
 <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+<script type='application/javascript' src='fastclick.js'></script>
 <script type="text/javascript">
-window.onload = function(){
+
 function cLick(obj) {
 
     var _this = obj;
@@ -60,6 +61,8 @@ $(".btn").click(function() {
 
 });
 
-	}
+</script>
+<script type="text/javascript">
+	FastClick.attach(document.body);
 </script>
 </html>
