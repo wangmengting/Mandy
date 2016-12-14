@@ -1,0 +1,80 @@
+/*重置*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{  margin:0;  padding:0;  }
+html{  color:#000;  font-family: "\5FAE\8F6F\96C5\9ED1","\5b8b\4f53",Tahoma,Arial,Helvetica,sans-serif; height:auto;min-height:100%; }
+body{  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;  color:#333; height:auto;line-height:1.8;min-height:100%; }
+table{  border-collapse:collapse;  border-spacing:0;  }
+fieldset,img{  border:0;  }
+address,caption,cite,code,dfn,em,strong,th,var{  font-style:normal;  font-weight:normal;  }
+ol,ul{  list-style:none;  }
+a{text-decoration: none; outline: none;}
+a:link,a:visited{color:#333;}
+a:hover {color: #2498ef !important;}
+caption,th{  text-align:left;  }
+h1,h2,h3,h4,h5,h6{  font-size:100%;  font-weight:normal;  }
+q:before,q:after{  content:'';  }
+abbr,acronym{  border:0;  font-variant:normal;  }
+sup{  vertical-align:text-top;  }
+sub{  vertical-align:text-bottom;  }
+input,textarea,select{  font-family:inherit;  font-size:inherit;  font-weight:inherit; outline:none; }
+legend{  color:#000;  }
+input,button{  outline: none;  border:none;  }
+a,button,input:not([type='checkbox']),textarea{-webkit-tap-highlight-color: rgba(0,0,0,0);   -webkit-appearance: none;
+}
+.clear {  clear: both;}
+/*书写样式 ---开始*/
+.swiper-container {  width: 100%;  height: 100%;  }
+.swiper-slide {  text-align: center;  font-size: 18px;  background: #fff; /* Center slide text vertically */  display: -webkit-box;  display: -ms-flexbox;  display: -webkit-flex;  display: flex;  -webkit-box-pack: center;  -ms-flex-pack: center;  -webkit-justify-content: center;  justify-content: center;  -webkit-box-align: center;  -ms-flex-align: center;  -webkit-align-items: center;  align-items: center;  }
+.slide-box {display:block;width:100%;}
+.slide-box img {width:100%;display:block;}
+.sec_main {background-color:#eee;padding-bottom:0.5rem;}
+.char ,.main_head,.main_body {padding:0 1rem;box-sizing:border-box;}
+.char {font-size:1.2rem;text-indent:2em;}
+.main_head {overflow:hidden;padding:0.4rem 1rem;background-color:#fff;}
+.main_head p {display:inline-block;}
+.ness {color:red;}
+.ness span {font-size:1.5rem;}
+.price {font-size:0.5rem;width:30%;text-align:center;}
+del {font-size:1rem;}
+.activity {float:right;border:1px solid #ccc;padding:0.3rem 0.5rem;box-sizing:border-box;border-radius:3px;}
+.main_body {background-color:#fff;overflow:hidden;}
+.main_body .title {text-indent:2em;padding-top:0.5rem;font-size:1.5rem;background:url("../img/lplb.png") no-repeat 1% center;  -webkit-background-size:auto 80%;  background-size:auto 80%;margin-bottom:1rem;}
+.main_body p {font-size:1.2rem;}
+.main_body img {width:100%;display:block;}
+footer {background-color:#eee;padding:0.5rem;box-sizing:border-box;font-size:1.6rem; position:fixed;height:4rem;line-height:3rem;bottom:0;left:0;width:100%;}
+.gold {}
+footer button {border:0;width:35%;position:absolute;top:0;right:0;font-size:1.6rem;height:4rem;background-color:#FF5A00;color:#fff;}
+.floatModel {position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.5);z-index:5;display:none;}
+.floatDress {width:100%;height:0;overflow:hidden;position:fixed;bottom:-2rem;left:0;padding:1rem;box-sizing:border-box;background-color:#fff;z-index:6;font-size:1.5rem;}
+.form-group {overflow:hidden;padding:0.5rem 0;}
+.form-group label {display:block;font-size:1rem;}
+.form-group input[type=text] {width:100%;border:1px solid #eee;line-height:1.5;padding:0.5rem ;border-radius:3px;font-size:1.2rem;box-sizing:border-box;box-shadow:none;}
+.p_btn {text-align:center;overflow:hidden;padding-top:1rem;}
+.p_btn buttom {width:50%;display:inline-block;border:1px solid #ccc;text-align:center;line-height:1.5;padding:0.5rem 0;border-radius:0.4rem;}
+.bnt_success {background-color:#4cae4c;color:#fff;}
+.tip_error {color:red;text-indent:2em;font-size:12px;padding-top:0.4rem;display:none;}
+.close {position:absolute;top:1rem;right:1rem;width:3rem;height:3rem;border-radius:3rem;background-color:rgba(0,0,0,.5);text-align:center;line-height:3rem;font-size:1.5rem;color:#fff;  -webkit-transform: rotate(45deg);  -moz-transform: rotate(45deg);  -ms-transform: rotate(45deg);  -o-transform: rotate(45deg);  transform: rotate(45deg);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*书写样式----结束*/
+/*媒体查询*/
+html{font-size: 10px;-webkit-text-size-adjust:none;}
+@media screen and (min-width:330px) and (max-width:360px) {html{font-size: 11.7px;}}
+@media screen and (min-width:361px) and (max-width:399px) {html{font-size: 12px;}}
+@media screen and (min-width:400px) and (max-width:479px) {html{font-size: 12.5px;}}
+@media screen and (min-width:480px) and (max-width:559px) {html{font-size: 12.93px;}}
+@media screen and (min-width:560px) and (max-width:639px) {html{font-size: 15px;}}
+@media screen and (min-width:640px) and (max-width:719px) {html{font-size: 20px;}}

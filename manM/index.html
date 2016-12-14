@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <title>商品详情页</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div href="#" class="swiper-slide">
+            <a href="#" class="slide-box">
+                <img src="img/1.jpg" alt="">
+            </a>
+        </div>
+        <div href="#" class="swiper-slide">
+            <a href="#" class="slide-box">
+                <img src="img/1.jpg" alt="">
+            </a>
+        </div>
+        <div href="#" class="swiper-slide">
+            <a href="#" class="slide-box">
+                <img src="img/1.jpg" alt="">
+            </a>
+        </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+
+    <script rel="text/javascript" src="js/zepto.min.js"></script>
+    <script rel="text/javascript" src="js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container',
+                {
+                    startSlide:0,		//表示轮播开始的图片编号
+                  /*  loop:true,*/
+                    auto: 3000,         //表示自动轮播的间隔
+                  /*  autoplay:2000,      //可选选项，自动滑动*/
+                    continuous: false,   //表示是否再来一轮
+                    disableScroll: true,  //表示是否在上面阻止默认的滚轮事件，不用改
+                    stopPropagation: true,   //表示是否组织冒泡，不用改。
+                    pagination: '.swiper-pagination'  //分页器
+
+                }
+        );
+    </script>
+</div>
+<section class="sec_main">
+    <p class="char">
+        商品名称文字显示，支持换行显示，最多显示两行,支持换行显示，最多显示两行
+    </p>
+    <div class="main_head">
+        <p class="ness"><span>1200</span>金币</p>
+        <p class="price"><del>市场价：￥120</del></p>
+        <p class="activity">活动截止：<span>6月15号</span></p>
+    </div>
+</section>
+<section>
+    <div class="main_body">
+        <h3 class="title">商品详情</h3>
+        <p>我是商品详情哦，所有的宝贝信息都在这里哦~</p>
+        <p>我是商品详情哦，所有的宝贝信息都在这里哦~</p>
+        <img src="img/1.jpg" alt="">
+        <p>我是商品详情哦，所有的宝贝信息都在这里哦~</p>
+        <p>我是商品详情哦，所有的宝贝信息都在这里哦~</p>
+        <p>我是商品详情哦，所有的宝贝信息都在这里哦~</p>
+        <p>我是商品详情哦，所有的宝贝信息都在这里哦~</p>
+        <img src="img/1.jpg" alt="">
+    </div>
+</section>
+<footer>
+    当前金币：<span class="gold">24000</span>
+    <button type="button" id="btnChange">马上兑换</button>
+</footer>
+
+<div class="floatModel"></div>
+<section class="floatDress">
+    <p>金币价格：<span>500</span> </p><buttom type="buttom" id="btn_close" class="close">+</buttom>
+    <div class="form-group">
+        <label for="dress">收货地址</label>
+        <input type="text" name="dress" id="dress">
+        <p class="tip_error">地址错误,请输入正确的地址</p>
+    </div>
+    <div class="form-group">
+        <label for="userName">收货人姓名</label>
+        <input type="text" name="name" id="userName">
+        <p class="tip_error">地址错误</p>
+    </div>
+    <div class="form-group">
+        <label for="userTel">联系电话</label>
+        <input type="text" name="tel" id="userTel">
+        <p class="tip_error">地址错误</p>
+    </div>
+    <p><input type="checkbox" name="keep" id="keep"> <label for="keep">记住填写的信息</label></p>
+    <p class="p_btn">
+        <buttom type="submit" id="btn_submit" class="bnt_success">确定</buttom>
+    </p>
+</section>
+<script>
+
+    $("#btnChange").tap(function(){
+        $(".floatModel").show();
+        $("body").css({
+            height :"100%",
+            overflow :"hidden"
+        });
+        $(".floatDress").animate({
+            height:"auto",
+            bottom:"0"
+        },200);
+        return false;
+    });
+
+    $("#btn_submit").tap(function(){
+        //验证表单
+        floatDressHide();
+    });
+
+    $("#btn_close").tap(function(){
+        //表单清空
+        floatDressHide();
+    });
+    function floatDressHide (){
+        $("body").css({
+            height :"auto",
+            overflow :"auto"
+        });
+        $(".floatModel").hide();
+        $(".floatDress").animate({
+            height:0,
+            bottom:"-2rem"
+        },200);
+    }
+
+</script>
+</body>
+</html>

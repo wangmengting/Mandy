@@ -1,0 +1,374 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{
+	margin:0;
+	padding:0;
+}
+html{
+	color:#000;
+}
+body{
+	overflow-x: hidden;
+	font-size: 14px;
+	font-family:"微软雅黑","SimSun","宋体";
+}
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img{
+	border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var{
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul{
+	list-style:none;
+}
+caption,th{
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after{
+	content:'';
+}
+abbr,acronym{
+	border:0;
+	font-variant:normal;
+}
+sup{
+	vertical-align:text-top;
+}
+sub{
+	vertical-align:text-bottom;
+}
+input,textarea,select{
+	font-family:inherit;
+	font-size:inherit;
+	font-weight:inherit;
+	*font-size:100%;
+}
+legend{
+	color:#000;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+  font-family: "微软雅黑",Tahoma ,Arial,Helvetica,sans-serif;
+}
+* {
+  transition: all 300ms;
+  -moz-transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -o-transition: all 300ms;
+}
+a{text-decoration: none;}
+.fl{float: left;}
+.fr{float: right;}
+.db{display: block !important;}
+.dn{display: none;}
+.banxin{width: 1200px;margin: 0 auto;position: relative;}
+.logo{float: left;padding: 10px;}
+.logo h3{text-indent: -9999px;display: block;height: 69px;width: 292px;background: url(images/mf_logo.png) no-repeat;}
+.h20{height: 20px;clear: both;}
+.h50{height: 50px;clear: both;}
+.h60{height: 60px;clear: both;}
+.h100{height: 100px;clear: both;}
+.tac{text-align: center;}
+.in200{z-index: 200;}
+/*登陆*/
+.login_header .logo{padding-top: 35px;}
+.login_header .Login_add{font-size: 20px;color: #fff;margin-left: 20px;line-height: 80px;}
+.slogin img{margin-top: -80px;}
+.content{margin-left: 275px;z-index: 100;min-height: 330px;}
+.main{background:#0a1e38 url(images/bg01.jpg) no-repeat center top;height: 1113px;}
+.main02{background:#0a1e38 url(images/bg02.jpg) no-repeat center top;height: 675px;}
+.foot{background:#0a1e38 url(images/bg03.jpg) no-repeat center top;height: 128px;}
+.top_box{background: #fff;overflow: hidden;}
+.top_box .nav{float: right;margin-top: 25px;}
+.top_box .nav ul li{float: left;margin-right: 60px;cursor: pointer;}
+.top_box .nav a{color: #0b213c;font-size: 16px;line-height: 16px;}
+.top_box .nav a.no2{font-size: 12px;}
+.top_box .nav a:hover{color: #0b213c;}
+.top_box .nav a span{color: #0b213c;font-size: 16px;}
+.top_box .nav a:hover span{-webkit-transform: rotateY(180deg);-moz-transform: rotateY(180deg);-o-transform: rotateY(180deg);-ms-transform: rotateY(180deg);transform: rotateY(180deg);}
+
+.entrance a{ width: 324px;height: 90px; background: url(images/come.png) no-repeat;position: absolute;top: 23px;right: 80px;z-index: 2;-moz-animation: byQr 3s linear infinite;-webkit-animation: byQr 3s linear infinite;-o-animation: byQr 3s linear infinite;-ms-animation: byQr 3s linear infinite;animation: byQr 3s linear infinite;}
+
+.sp_box{width: 822px;position: absolute;top:550px;left: -100px;z-index: 10;}
+.sp_box .ft {width: 581px;background: #0b213d;line-height: 40px;padding:0 15px;}
+.sp_box .ft span{font-size: 20px;font-weight: bold;color: #fff;padding:0 30px;}
+.sp_box .ft span.ts{font-size: 16px;font-weight: normal;padding:0 38px;}
+.sp_box .fl a{margin-top: 10px;display: block;text-indent: -9999px;background: url(images/btn.png) no-repeat 0 0;width: 271px;height: 75px;-webkit-transition:none;-moz-transition:none;}
+.sp_box .fl a:hover{background-position:0 -75px;}
+.sp_box .fl a.no2{background-position: -271px 0;}
+.sp_box .fl a.no2:hover{background-position:  -271px -75px;}
+.vedio-box{position: relative;}
+.vedio-box .no1{position: absolute;left: 28px;top:28px;}
+.vedio-box .no2{position: absolute;left: 84px;top:78px;}
+.vedio-box:hover .no2{-webkit-transform:scale(1.2)}
+
+.mainSwf {position: absolute;width: 1920px;height: 1113px;top: 0;left: 50%;margin-left: -960px;min-width: 1000px;overflow: hidden;}
+.mainSwf .rw{position: absolute;}
+
+
+.contant{position: absolute;top:900px;width: 1200px;margin-left: -15px;}
+.bt h3{height: 76px;background: url(images/bt01.png) no-repeat;text-indent: -9999px;margin-left: 20px;}
+.bt.no2 h3{background-image: url(images/bt02.png);}
+.bt.no3 h3{background-image: url(images/bt03.png);}
+.package-box .package-info{border:20px solid #4987d1;}
+.package-info{background: #113b65;padding:15px;padding-right: 0;padding-left: 10px;}
+.package-info .swiper-wrapper{overflow: hidden;}
+.package-info .swiper-wrapper .swiper-slide{float: left;}
+.package-info .swiper-wrapper .swiper-slide a:hover img{opacity: 0.75;}
+/*.package-box .swiper-wrapper .swiper-slide a img{ display: block;}*/
+.swiper-container {width: 1135px;height: 164px;color: #fff;}
+.arrow-left {
+  background: url(images/left.png) no-repeat left top;
+  position: absolute;
+  left: -50px;
+  top: 22%;
+  width: 41px;
+  height: 44px;
+}
+.arrow-right {
+  background: url(images/right.png) no-repeat left bottom;
+  position: absolute;
+  right: -50px;
+  top: 22%;
+  width: 41px;
+  height: 44px;
+}
+.swiper-container02 .pagination {
+  position: absolute;
+  z-index: 20;
+  left:0;
+  bottom: 10px;
+}
+.swiper-pagination-switch {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background: #555;
+  margin: 0 0px 5px;
+  opacity: 0.8;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.swiper-visible-switch {
+  background: #aaa;
+}
+.swiper-active-switch {
+  background: #fff;
+}
+.welfare-box{width: 624px;}
+.pic-box{width: 544px;margin-right: 15px;}
+.por-top{position: relative;top:-20px;}
+.welfare-box .swiper-container02{padding:0 17px;background: #113b65;height:383px;overflow: hidden;border:10px solid #113b65;position: relative;}
+.welfare-box .swiper-wrapper .swiper-slide{margin-bottom: 5px;width: 100%;}
+.welfare-box .swiper-wrapper .swiper-slide:nth-child(2n){margin-right:0;}
+.welfare-box .swiper-wrapper .swiper-slide a{display: block;}
+.welfare-box .swiper-wrapper .swiper-slide a:hover img{border:2px solid #fff;}
+
+.pic-box .lb{position: relative;overflow: hidden;height:405px;}
+.pic-box .lb ul{position: absolute;width: 10000px; -webkit-transition:none;-moz-transition:none;}
+.pic-box .lb ul li{float: left;}
+.pic-box .lb ul li a img{border:2px solid #fff;width: 540px;height: 400px;}
+.pic-box .lb .dianul{position: absolute;right: 30px;bottom: 10px;}
+.pic-box .lb .dianul span{display: inline-block;width: 25px;height: 25px;border-radius: 100px;background: #fff;margin-right: 5px; -webkit-transition:none;-moz-transition: none;}
+.pic-box .lb .dianul span.cur{background:#fff url(images/diancur.png) no-repeat center center;}
+
+.tk{z-index: 900;width: 820px;padding:65px 150px;height: 539px;position: fixed;top:15%;left: 50%;margin-left: -560px;background: url(images/tkbg.png) no-repeat; -webkit-transition:none;-moz-transition: none;}
+.tk .x{width: 57px;height: 53px;position: absolute;top:-20px;right: -70px;background: url(images/tkx.png) no-repeat;}
+.tk .bt h3{font: bold 42px/76px "微软雅黑";background: none;text-indent: 0;color: #B1DCFC;}
+.tk .bt{text-align: center;}
+.tk .tk-inner{margin: 100px 130px;height: 240px;overflow-y: auto;}
+.tk .tk-inner p{color: #fff;line-height: 20px;}
+
+
+
+
+
+
+.down{overflow: hidden;background: #4a81bd;background: rgba(73,135,207,0.6);width: 611px;}
+.weima{padding: 5px;background: #4a81bd;background: rgba(73,135,207,0.6);}
+.foot{overflow: hidden;}
+.foot_top{text-align:center; font-size:14px; color:#4987d1;height:34px; line-height:30px; width:100%;}
+.foot_top a{ color:#4987d1;}
+.foot_top p{ color:#4987d1; font-size:14px; line-height: 130px;display: inline-block;margin-left: 20px;}
+
+.lay{display: none;z-index:100;width: 100%;height: 100%;background: #000;opacity: 0.8;filter:alpha(opacity=80);position: absolute;top:0;left: 0;}
+.g-videoPop {display: none;position: fixed;z-index:101; left: 50%; margin-left: -480px;top: 50%; width: 960px; height: 560px;margin-top: -280px;}
+.g-videoPop .closeVideo {position: absolute;top:0;right: -65px;z-index: 555;width: 65px;height: 65px;background: url(images/shut.png) no-repeat;cursor: pointer;}
+.g-videoPop .closeVideo:hover {background: url(images/shut-hover.png) no-repeat;}
+
+@-webkit-keyframes byQr{
+0%{-webkit-transform:scale(0.9)}
+50%{-webkit-transform:scale(1)}
+100%{-webkit-transform:scale(0.9)}
+}
+@-moz-keyframes byQr{
+0%{-moz-transform:scale(0.9)}
+50%{-moz-transform:scale(1)}
+100%{-moz-transform:scale(0.9)}
+}
+
+.vedio-box .no1{
+-webkit-animation:rotate 2s linear both infinite; 
+-moz-animation:rotate 2s linear both infinite;}
+@-webkit-keyframes rotate{
+0%{-webkit-transform:rotate(0deg)}
+100%{-webkit-transform:rotate(360deg)}
+}
+@-moz-keyframes rotate{
+0%{-moz-transform:rotate(0deg)}
+100%{-moz-transform:rotate(360deg)}
+}
+
+.nav ul li:hover a.no1{
+-webkit-animation:fadeInUp 1s ease both;
+-moz-animation:fadeInUp 1s ease both;}
+@-webkit-keyframes fadeInUp{
+0%{opacity:0;
+-webkit-transform:translateX(20px)}
+100%{opacity:1;
+-webkit-transform:translateX(0)}
+}
+@-moz-keyframes fadeInUp{
+0%{opacity:0;
+-moz-transform:translateX(20px)}
+100%{opacity:1;
+-moz-transform:translateX(0)}
+}.nav ul li:hover a.no2{-webkit-animation:fadeInUp 1s ease .2s both;-moz-animation:fadeInUp 1s ease .2s both;}
+
+
+
+/*
+ * Swiper 2.7.0
+ * Mobile touch slider and framework with hardware accelerated transitions
+ *
+ * http://www.idangero.us/sliders/swiper/
+ *
+ * Copyright 2010-2014, Vladimir Kharlampidi
+ * The iDangero.us
+ * http://www.idangero.us/
+ *
+ * Licensed under GPL & MIT
+ *
+ * Released on: August 30, 2014
+*/
+/* ===============================================================
+Basic Swiper Styles 
+================================================================*/
+.swiper-container {
+	margin:0 auto;
+	position:relative;
+	overflow:hidden;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	-ms-backface-visibility:hidden;
+	-o-backface-visibility:hidden;
+	backface-visibility:hidden;
+	/* Fix of Webkit flickering */
+	/*z-index:1;*/
+}
+.swiper-wrapper {
+	position:relative;
+	width:100%;
+	-webkit-transition-property:-webkit-transform, left, top;
+	-webkit-transition-duration:0s;
+	-webkit-transform:translate3d(0px,0,0);
+	-webkit-transition-timing-function:ease;
+	
+	-moz-transition-property:-moz-transform, left, top;
+	-moz-transition-duration:0s;
+	-moz-transform:translate3d(0px,0,0);
+	-moz-transition-timing-function:ease;
+	
+	-o-transition-property:-o-transform, left, top;
+	-o-transition-duration:0s;
+	-o-transform:translate3d(0px,0,0);
+	-o-transition-timing-function:ease;
+	-o-transform:translate(0px,0px);
+	
+	-ms-transition-property:-ms-transform, left, top;
+	-ms-transition-duration:0s;
+	-ms-transform:translate3d(0px,0,0);
+	-ms-transition-timing-function:ease;
+	
+	transition-property:transform, left, top;
+	transition-duration:0s;
+	transform:translate3d(0px,0,0);
+	transition-timing-function:ease;
+
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+.swiper-free-mode > .swiper-wrapper {
+	-webkit-transition-timing-function: ease-out;
+	-moz-transition-timing-function: ease-out;
+	-ms-transition-timing-function: ease-out;
+	-o-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+	margin: 0 auto;
+}
+.swiper-slide {
+	/*float: left;*/
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+/* IE10 Windows Phone 8 Fixes */
+.swiper-wp8-horizontal {
+	-ms-touch-action: pan-y;
+}
+.swiper-wp8-vertical {
+	-ms-touch-action: pan-x;
+}
+
+/* ===============================================================
+Your custom styles, here you need to specify container's and slide's
+sizes, pagination, etc.
+================================================================*/
+.swiper-container {
+	/* Specify Swiper's Size: */
+
+	/*width:200px;
+	height: 100px;*/
+}
+.swiper-slide {
+	/* Specify Slides's Size: */
+	
+	/*width: 100%;
+	height: 100%;*/
+}
+.swiper-slide-active {
+	/* Specific active slide styling: */
+	
+}
+.swiper-slide-visible {
+	/* Specific visible slide styling: */	
+
+}
+/* ===============================================================
+Pagination Styles
+================================================================*/
+.swiper-pagination-switch {
+	/* Stylize pagination button: */	
+
+}
+.swiper-active-switch {
+	/* Specific active button style: */	
+	
+}
+.swiper-visible-switch {
+	/* Specific visible button style: */	
+	
+}
