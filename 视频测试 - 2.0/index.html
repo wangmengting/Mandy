@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui"/>
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-<title>与吴亦凡视频通话</title>
+<title>精英测试 冒险来袭</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -32,6 +32,7 @@
   <div class="page page4">
     <div class="videobox">
       <video class="video-box" data-index="3" id="videoIndex3"  x-webkit-airplay="true" webkit-playsinline="true" preload="auto"  poster="images/bg.jpg" src="images/3.mp4"></video>
+      <div class="poster"> </div>
     </div>
   </div>
   <div class="page page5">
@@ -50,18 +51,12 @@
   </div>
 </div>
 
-<div class="overlay" id="shareOverlay" ontouchstart="sharePop.hide()">
-  <div class="arrow"></div>
-</div>
 <div class="mask">
   为了更好的体验，请将手机/平板竖过来
 </div>
-
-<!-- <audio src="http://ossweb-img.qq.com/images/wefire/act/a20150826kris/ring.mp3" class="ring-bg" loop="loop"></audio> -->
-<script src="http://ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script>
-<!-- <script src="http://ossweb-img.qq.com/images/js/WXJssdk.js"></script> -->
-<!-- <script src="http://pub.idqqimg.com/qqmobile/qqapi.js?t=2013120901"></script> -->
-<script src="http://pingjs.qq.com/ping_tcss_ied.js"></script>
+<div class="down_bg"><img src="images/down_bg.jpg" alt=""></div>
+<script src="js/zepto(mixNIE).last.js"></script>
+<script src="js/ping_tcss_ied.js"></script>
 <script>
 var query = function(selector){
   return document.querySelector(selector);
@@ -109,12 +104,7 @@ d(".videobox",'center center');
 
 
 
-
-// query(".ring-bg").play(); 
-
-
 $("#well").bind("swipeRight", function() {
-  // query(".ring-bg").pause();
   pgvSendClick({hottag:'a20150826kris.callv3.play'});
   if (browser.versions.android){
     $(".video-box").attr("controls",true)
@@ -133,31 +123,12 @@ v.addEventListener("ended",function() {
   pgvSendClick({hottag:'a20150826kris.callpage5.play'});
   $(".page4").hide();
   $(".page5").addClass("show-end");
-  document.title="吴亦凡邀你亦起战";
 });
 
+$("#videoIndex3")[0].oncanplay=function(){
+  $(".poster").hide(200);
+}
 
-
-var sharePop = function() {
-    
-  var o = query("#shareOverlay");
-    var cls = o.className;
-    var show = function() {
-        pgvSendClick({hottag:'a20150826kris.call-sharepop.show'});
-    o.style.zIndex = 80;
-        o.className = "overlay overlay-show";
-    };
-    var hide = function() {
-        o.className = cls.replace(/overlay-show/, "");
-        setTimeout(function() {
-            o.style.zIndex = 1;
-        }, 300);
-    };
-    return {
-        show:show,
-        hide:hide
-    };
-}();
 
 
 
