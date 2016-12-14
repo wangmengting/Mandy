@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+    <title></title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection"content="telephone=no, email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telphone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <meta name="renderer" content="webkit"><!-- 启用360浏览器的极速模式(webkit) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- 避免IE使用兼容模式 -->
+    <meta name="HandheldFriendly" content="true"><!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="MobileOptimized" content="320"><!-- 微软的老式浏览器 -->
+    <meta name="screen-orientation" content="portrait"><!-- uc强制竖屏 -->
+    <meta name="x5-orientation" content="portrait"><!-- QQ强制竖屏 -->
+    <meta name="x5-fullscreen" content="true"><!-- QQ强制全屏 -->
+    <meta name="x5-page-mode" content="app"><!-- QQ应用模式 -->
+    <meta name="msapplication-tap-highlight" content="no"><!-- windows phone 点击无高光 -->
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+
+</head>
+
+<body>
+  <div class="content">
+     <div class="page page1" id="page1" >
+      <div id="page-wrap">
+        <div id="well">
+             <h2>&gt; 滑动以解锁</h2>
+             <div class="slider_box"><strong id="slider"></strong></div>
+        </div>
+      </div>
+     </div>    
+
+    <div class="page page2">
+        <div class="video-box">
+           <video class="video" data-index="1" id="v1"  x-webkit-airplay="true" webkit-playsinline="true" preload="auto"  src="images/3.mp4" ></video>
+          <div class="page1-con"></div>
+        </div>
+    </div>    
+
+    <div class="page page3">
+      <span class="icon spe"></span>
+      <div class="slogan spe"></div>
+      <div class="shit"></div>
+      <div class="inner-box tac">
+          <img src="images/weima.png" alt="">
+          <p class="fz16">长按二维码下载游戏</p>
+          <p>（仅限安卓设备下载）</p>
+          <input type="text" placeholder="cdk:DES888888">
+          <p>领取礼包，每个角色仅可使用一次</p>
+      </div>
+  </div>
+
+ </div>
+     <!-- 横屏提示 -->
+    <section class="hTip">麻烦切换至竖屏观看！</section>
+
+    <!-- 下载提示 已hide-->
+    <div class="down_bg"><img src="images/down_bg.jpg" alt=""></div>
+
+</body>
+<script type="text/javascript" src="js/zepto(mixNIE).last.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+<script>
+ //禁止滑动
+ document.body.addEventListener('touchmove', function(event) {
+     event.preventDefault();
+ }, false);
+</script>
+</html>
