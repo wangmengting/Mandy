@@ -114,6 +114,9 @@ $("#well").bind("swipeRight", function() {
 
 });
 
+$("#videoIndex3")[0].oncanplay=function(){
+  $(".poster").hide();
+}
 
 
 var v = document.getElementById('videoIndex3');
@@ -125,9 +128,6 @@ v.addEventListener("ended",function() {
   $(".page5").addClass("show-end");
 });
 
-$("#videoIndex3")[0].oncanplay=function(){
-  $(".poster").hide(200);
-}
 
 
 
