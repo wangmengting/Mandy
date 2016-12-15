@@ -32,8 +32,9 @@
   <div class="page page4">
     <div class="videobox">
       <video class="video-box" data-index="3" id="videoIndex3"  x-webkit-airplay="true" webkit-playsinline="true" preload="auto" src="images/3.mp4"></video>
-      <div class="poster"> </div>
     </div>
+      <div class="poster"> </div>
+      <div class="skip"></div>    
   </div>
   <div class="page page5">
     <div class="page5-con">
@@ -56,7 +57,7 @@
 </div>
 <div class="down_bg"><img src="images/down_bg.jpg" alt=""></div>
 <script src="js/zepto(mixNIE).last.js"></script>
-<script src="js/ping_tcss_ied.js"></script>
+<!-- <script src="js/ping_tcss_ied.js"></script> -->
 <script>
 var query = function(selector){
   return document.querySelector(selector);
@@ -105,7 +106,7 @@ d(".videobox",'center center');
 
 
 $("#well").bind("swipeRight", function() {
-  pgvSendClick({hottag:'a20150826kris.callv3.play'});
+  // pgvSendClick({hottag:'a20150826kris.callv3.play'});
   if (browser.versions.android){
     $(".video-box").attr("controls",true)
   }
@@ -122,14 +123,13 @@ $("#videoIndex3")[0].oncanplay=function(){
 var v = document.getElementById('videoIndex3');
 
 
-v.addEventListener("ended",function() {
-  pgvSendClick({hottag:'a20150826kris.callpage5.play'});
+v.addEventListener("ended",show);
+$(".skip").bind("click",show);
+
+function show() {
   $(".page4").hide();
   $(".page5").addClass("show-end");
-});
-
-
-
+}
 
 
 
