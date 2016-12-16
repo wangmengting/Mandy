@@ -92,14 +92,14 @@ background-size: 100% auto;}
 .shit{position: absolute;top:48%;left: 0;height: 500px;width: 100%;background-image: url("images/shit.png");-webkit-transform:scale(0);transform:scale(0);}
 .inner-box{color: #fff;}
 .inner-box h3{text-align: left;width: 88%;margin: 0 auto;font-size: 2.7rem;color: #fff;}
-.inner-box img{width: 43%;margin-bottom: 3px;  margin-top: -50px;}
+.inner-box img{width: 43%;margin-bottom: 3px;  margin-top: -230px;}
 .inner-box p{font-size: 1.9rem;line-height: 2.4rem;color: #fff61c;}
 .inner-box input{font-size: 2.5rem;background: #00629d;border-radius: 7px;text-align: center;width:80%;height: 3.8rem;margin-top: 10px;margin-bottom: 2px;border:2px solid #1aa8fd;}
 .inner-box button{width: 205px;height: 69px;font-size: 2.5rem;color:#fff;background: url(images/btn.png);text-align: center;line-height: 69px;margin: 10px;;}
 .show-end .rw,.show-end .gs{ -webkit-animation-delay: 0.2s;} 
 .show-end .rw{ left: 0; -webkit-animation: anim-left .3s .3s ease both;}  
 .show-end .gs{ right: 0; -webkit-animation: anim-right .3s .3s ease both;}  
-
+.zIn{position: relative;z-index: 2;}
 .down_bg{position: absolute;top:0;left:0;text-align: center;width: 100%;z-index: 100;display: none;}
 
 .btn_hasNext{width: 42px;height: 33px;background: url(images/btn_hasNext.png) no-repeat; margin: 31px auto;   animation: moveIconUp ease 1.5s both infinite;-webkit-animation: moveIconUp ease 1.5s both infinite;}
@@ -113,9 +113,6 @@ background-size: 100% auto;}
 
 @keyframes anim-right {0% { transform: translateX(100%);}100% {transform: translateX(0);}}
 @-webkit-keyframes anim-right {0% { -webkit-transform: translateX(100%);}100% { -webkit-transform: translateX(0);}}
-
-@keyframes anim-opt {0% { opacity: 0;}100% {opacity: 1;}}
-@-webkit-keyframes anim-opt {0% { opacity: 0;}100% { opacity: 1;}}
 
 </style>
 </head>
@@ -140,13 +137,15 @@ background-size: 100% auto;}
     <div class="page page3 show-end">
       <img class="rw" src="images/rw.png" alt="">
       <img class="gs" src="images/gs.png" alt="">
-      <div class="inner-box tac"> <img src="images/weixin.png" alt=""> 
-        <h3>我的邀请码:</h3>         
+      <div class="inner-box tac"> 
+        <div class="zIn">
+          <h3>我的邀请码:</h3>         
           <input type="text" placeholder="cdk:DES888888"><br>
-          <button>长按复制</button>
+          <button>长按复制</button>          
+        </div>
           <p>领取方式：复制邀请码进去游戏至“福利中心”——“分享有礼”</p>
           <p class="btn_hasNext"></p>
-         
+         <img src="images/weixin.png" alt=""> 
           <p>长按二维码下载游戏（仅限安卓设备下载）</p>
       </div>
   </div>
