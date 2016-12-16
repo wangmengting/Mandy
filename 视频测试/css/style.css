@@ -70,10 +70,10 @@ background-size: 100% auto;}
 .slider_box{width:676px ;height:98px; overflow: hidden;z-index:999;}
 #slider {position: absolute;top:18px;left:50px;width: 146px;height: 98px;-webkit-background-size: 100% auto;
 background-size: 100% auto;}
-.video-box{position: absolute;top: 50%;left: 50%;z-index: 8;width: 640px;height: 100%;overflow: hidden;transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);}
-
-.page1-con{width: 100%;padding-top: 66.55%;position: absolute;top: 0;left: 0;background: url(../images/bg.jpg) no-repeat;height: 100%;-webkit-background-size: 100% auto;
+.video-box{position: absolute;top: 0;left: 50%;margin-left: -320px;z-index: 8;width: 640px;height: 100%;overflow: hidden;}
+.video-box-lay{position: absolute;top: 0;left: 50%;margin-left: -320px;z-index: 9;width: 640px;height: 100%;overflow: hidden;background: url(../images/bg.jpg) no-repeat center top;-webkit-background-size: 100% auto;
 background-size: 100% auto;}
+
   @-webkit-keyframes slidetounlock {0% {background-position: -720px 0;}100%{background-position: 720px 0;}}
 
 .page3{background-position: 0px 0px;background-repeat: no-repeat; background-size: cover}
@@ -139,10 +139,12 @@ background-size: 100% auto;}
 .down_bg{position: absolute;top:0;left:0;text-align: center;width: 100%;z-index: 100;display: none;}
 
 .video-box.anim{
-  -webkit-animation:test 3s steps(30,end) both;
-  animation:test 3s steps(30,end) infinite both;
-  background:url(../images/anim.jpg) repeat-x;
+  -webkit-animation:test 2.5s steps(30,end) both;
+  animation:test 2.5s steps(30,end) infinite both;
+  background:url(../images/anim.jpg) repeat-x center center;
   /*animation-timing-function:linear;*/
+  transform:scale(1.2);
+  -webkit-transform:scale(1.2);
 }
 
 @-webkit-keyframes test {

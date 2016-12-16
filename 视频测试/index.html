@@ -47,8 +47,8 @@
      </div>    
 
     <div class="page page2">
-        <div class="video-box">
-        </div>
+        <div class="video-box"></div>        
+        <div class="video-box-lay"></div>
     </div>    
 
     <div class="page page3">
@@ -102,15 +102,14 @@ function move(e){
         if(disX >= 150){ 
 
         setTimeout(function (){
-          $(".page1,.page1-con").hide(),
-          $(".video-box").addClass('anim');
+          $(".page1,.page1-con").hide()
         },200)      
         // if($(".video-box").hasClass('anim')){
           // alert(message)
           setTimeout(function(){
             $(".page2").hide();
             $(".page3").addClass("show-end");
-          },3300)
+          },2700)
         // }  
         }
         this.style.left = (oldX+disX) + "px";
@@ -127,7 +126,45 @@ function move(e){
      }
   },false);
 
+    //首页头图loading
+  var imgs = ["anim.jpg","bg_end.jpg"];
+  preloadimg (imgs, function(){
+    // $(".page img").each(function(index, element) {
+    //   $(this).attr("src", $(this).data("src"));
+    // });   
+        setTimeout(function (){
+          $(".video-box-lay").hide(),
+          $(".video-box").addClass('anim');
+        },200)  
 
+  });
+
+    function preloadimg(arr, comp){
+    var flag = true,
+      n = 0;
+    var loadImg = function(src){
+      var img = new Image();
+      img.onload = function(){
+        n++;
+        var t = Math.round(n/l*100);
+        // $("#loading span").text(t+"%");
+        if(t >= 97 && flag){
+          comp();
+          flag = false;
+        }
+      }
+      img.src = src;
+    }
+    if(typeof(arr) == "string"){
+      var l = 1;
+      var w = new loadImg(arr);
+    }else{
+      var l = arr.length;
+      for(var i=0;i<l;i++){
+        var w = new loadImg("images/" + arr[i]);
+      }
+    }
+  }
 </script>
 
 
