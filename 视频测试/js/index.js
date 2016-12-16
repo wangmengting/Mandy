@@ -23,21 +23,23 @@ function move(e){
    if ( Math.abs(disX) > Math.abs(disY) && disX > 0 ) {  
         // console.log(disX);
         if(disX >= 150){ 
-          // disX = 420,
-          $("#v1")[0].play();
-
+          if (browser.versions.android){
+            $(".video-box").attr("controls",true)
+          }
         setTimeout(function (){
           $(".page1,.page1-con").hide();
-        },200)
+        },200)      
+            
+        $("#v1")[0].play();
 
         }
         this.style.left = (oldX+disX) + "px";
    }
 }
-  $("#v1")[0].addEventListener("canplay",function(evt) {
-    alert("我准备好了");
-  });  
-$("#v1")[0].onloadstart=alert("我在加载了");
+//   $("#v1")[0].addEventListener("canplay",function(evt) {
+//     alert("我准备好了");
+//   });  
+// $("#v1")[0].onloadstart=alert("我在加载了");
 
   oDiv.addEventListener("touchstart",start,false);
   oDiv.addEventListener("touchmove",move,false);

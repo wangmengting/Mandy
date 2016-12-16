@@ -33,7 +33,12 @@
 <body>
   <div class="content">
      <div class="page page1" id="page1" >
+        <div class="txt">
+             <span class="nickname">10:00</span>
+             <span>12月21日 &nbsp;&nbsp;星期二</span>
+        </div>      
       <div id="page-wrap">
+
         <div id="well">
              <h2>&gt; 滑动以解锁</h2>
              <div class="slider_box"><strong id="slider"></strong></div>
@@ -43,8 +48,6 @@
 
     <div class="page page2">
         <div class="video-box">
-           <video class="video" data-index="1" id="v1"  x-webkit-airplay="true" webkit-playsinline="true" preload="auto"  src="images/3.mp4" ></video>
-          <div class="page1-con"></div>
         </div>
     </div>    
 
@@ -70,7 +73,64 @@
 
 </body>
 <script type="text/javascript" src="js/zepto(mixNIE).last.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
+<!-- <script type="text/javascript" src="js/index.js"></script> -->
+<script type="text/javascript">
+  
+ var  oBox = document.getElementById("page1");
+ var  oDiv = document.getElementById("slider");
+
+ var startX = 0 ,startY = 0 ,moveEndX = 0 ,moveEndY = 0 ,disX = 0 ,disY = 0 ,oldX = 0,oldY = 0;
+
+
+function start(e){
+   oDiv.style.transition="none";
+   e.preventDefault();
+   startX = e.changedTouches[0].clientX;
+   startY = e.changedTouches[0].clientY;
+   oldX = parseInt(getComputedStyle(this,null).left);
+   oldY = parseInt(getComputedStyle(this,null).top);
+}
+
+function move(e){
+   e.preventDefault();
+   moveEndX = e.changedTouches[0].clientX;
+   moveEndY = e.changedTouches[0].clientY;
+   disX = moveEndX - startX;
+   disY = moveEndY - startY;
+   if ( Math.abs(disX) > Math.abs(disY) && disX > 0 ) {  
+        // console.log(disX);
+        if(disX >= 150){ 
+
+        setTimeout(function (){
+          $(".page1,.page1-con").hide(),
+          $(".video-box").addClass('anim');
+        },200)      
+        // if($(".video-box").hasClass('anim')){
+          // alert(message)
+          setTimeout(function(){
+            $(".page2").hide();
+            $(".page3").addClass("show-end");
+          },3300)
+        // }  
+        }
+        this.style.left = (oldX+disX) + "px";
+   }
+}
+
+  oDiv.addEventListener("touchstart",start,false);
+  oDiv.addEventListener("touchmove",move,false);
+
+  oDiv.addEventListener("touchend",function(){
+     if(disX < 320){
+       oDiv.style.left="50px";
+       oDiv.style.transition="left 1s";
+     }
+  },false);
+
+
+</script>
+
+
 
 <script>
  //禁止滑动
