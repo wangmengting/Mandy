@@ -56,7 +56,7 @@
       <div class="slogan spe"></div>
       <div class="shit"></div>
       <div class="inner-box tac">
-          <img src="images/weixin.jpg" alt="">
+          <img src="images/weixin.png" alt="">
           <p class="fz16">长按二维码下载游戏</p>
           <p>（仅限安卓设备下载）</p>
           <input type="text" placeholder="cdk:DES888888">
@@ -76,95 +76,38 @@
 <!-- <script type="text/javascript" src="js/index.js"></script> -->
 <script type="text/javascript">
   
- var  oBox = document.getElementById("page1");
- var  oDiv = document.getElementById("slider");
-
- var startX = 0 ,startY = 0 ,moveEndX = 0 ,moveEndY = 0 ,disX = 0 ,disY = 0 ,oldX = 0,oldY = 0;
 
 
-function start(e){
-   oDiv.style.transition="none";
-   e.preventDefault();
-   startX = e.changedTouches[0].clientX;
-   startY = e.changedTouches[0].clientY;
-   oldX = parseInt(getComputedStyle(this,null).left);
-   oldY = parseInt(getComputedStyle(this,null).top);
+
+
+var ArrImg = ["images/anim.jpg","images/bg_end.jpg"];
+var num    = 0;
+for(var i = 0;i<ArrImg.length;i++){
+  var oImg = new Image();
+  oImg.src = ArrImg[i];
+  oImg.onload = function () {
+   num ++ 
+   if(num == ArrImg.length){
+      $("#page1").bind("swipeRight",function(){
+              setTimeout(function (){
+                $(".page1,.page1-con,.video-box-lay").hide(),
+                $(".video-box").addClass('anim');
+              },200)      
+
+                setTimeout(function(){
+                  $(".page2").hide();
+                  $(".page3").addClass("show-end");
+                },2700)
+
+      });
+
+        // setTimeout(function (){
+        //   $(".video-box-lay").hide(),
+        //   $(".video-box").addClass('anim');
+        // },200)      
+  }   
 }
-
-function move(e){
-   e.preventDefault();
-   moveEndX = e.changedTouches[0].clientX;
-   moveEndY = e.changedTouches[0].clientY;
-   disX = moveEndX - startX;
-   disY = moveEndY - startY;
-   if ( Math.abs(disX) > Math.abs(disY) && disX > 0 ) {  
-        // console.log(disX);
-        if(disX >= 150){ 
-
-        setTimeout(function (){
-          $(".page1,.page1-con").hide()
-        },200)      
-        // if($(".video-box").hasClass('anim')){
-          // alert(message)
-          setTimeout(function(){
-            $(".page2").hide();
-            $(".page3").addClass("show-end");
-          },2700)
-        // }  
-        }
-        this.style.left = (oldX+disX) + "px";
-   }
 }
-
-  oDiv.addEventListener("touchstart",start,false);
-  oDiv.addEventListener("touchmove",move,false);
-
-  oDiv.addEventListener("touchend",function(){
-     if(disX < 320){
-       oDiv.style.left="50px";
-       oDiv.style.transition="left 1s";
-     }
-  },false);
-
-    //首页头图loading
-  var imgs = ["anim.jpg","bg_end.jpg"];
-  preloadimg (imgs, function(){
-    // $(".page img").each(function(index, element) {
-    //   $(this).attr("src", $(this).data("src"));
-    // });   
-        setTimeout(function (){
-          $(".video-box-lay").hide(),
-          $(".video-box").addClass('anim');
-        },200)  
-
-  });
-
-    function preloadimg(arr, comp){
-    var flag = true,
-      n = 0;
-    var loadImg = function(src){
-      var img = new Image();
-      img.onload = function(){
-        n++;
-        var t = Math.round(n/l*100);
-        // $("#loading span").text(t+"%");
-        if(t >= 97 && flag){
-          comp();
-          flag = false;
-        }
-      }
-      img.src = src;
-    }
-    if(typeof(arr) == "string"){
-      var l = 1;
-      var w = new loadImg(arr);
-    }else{
-      var l = arr.length;
-      for(var i=0;i<l;i++){
-        var w = new loadImg("images/" + arr[i]);
-      }
-    }
-  }
 </script>
 
 
