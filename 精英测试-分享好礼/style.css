@@ -1,0 +1,141 @@
+  @charset "utf-8";
+/* CSS Reset*/
+html { font-family:"微软雅黑","Helvetica Neue", Helvetica, STHeiTi, sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 62.5%;}
+body { margin: 0; line-height: 24px; color: #000; background-color: #FFF; overflow-x: hidden; -webkit-overflow-scrolling: touch; }.artMain, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; clear:both}
+a { background: transparent; text-decoration: none; color: #000; }
+a:active { outline: 0; }
+b, strong { font-weight: bold; }
+dfn { font-style:normal;}
+img { border: 0; vertical-align: middle;}
+* { -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-tap-highlight-color: transparent; /* For some Androids */ outline: none;}
+input,textarea,button { border: 0; margin: 0; padding: 0; font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;}
+textarea { resize: none;}
+table { border-collapse: collapse; border-spacing: 0; }
+td, th { padding: 0; }
+h1, h2, h3, h4, h5, h6, p, figure, form, blockquote,em { margin: 0; font-weight: normal; font-style: normal;}
+ul, ol, li, dl, dd { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+input::-moz-placeholder, textarea::-moz-placeholder { color: #ccc; }
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { color: #ccc; }
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #ccc; }
+body{    background-image: -webkit-linear-gradient(to top,#052454, #1073bf );
+    background-image: linear-gradient(to top,#052454,#1073bf);width: 100%;max-width: 640px;min-width: 320px;min-height: 100%;margin: 0 auto;}
+@media only screen and (min-width:490px){.main,body{max-width:6.4rem}
+}
+html{font-size:312.5%}
+@media screen and (max-width: 359px) and (orientation:portrait) {
+    html {
+        font-size:266.67%
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width:374px) and (orientation:portrait) {
+    html {
+        font-size:300%
+    }
+}
+
+@media screen and (min-width: 384px) and (max-width:399px) and (orientation:portrait) {
+    html {
+        font-size:320%
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width:413px) and (orientation:portrait) {
+    html {
+        font-size:333.33%
+    }
+}
+
+@media screen and (min-width: 414px) and (max-width:431px) and (orientation:portrait) {
+    html {
+        font-size:345%
+    }
+}
+
+@media screen and (min-width: 432px) and (max-width:479px) and (orientation:portrait) {
+    html {
+        font-size:360%
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width:639px) and (orientation:portrait) {
+    html {
+        font-size:400%
+    }
+}
+
+@media screen and (min-width: 640px) and (orientation:portrait) {
+    html {
+        font-size:533.33%
+    }
+}
+.clear{clear: both;font-size:0px;padding: 0px;margin: 0px;height:0px;line-height:0px; }
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+.clearfix{*zoom:1;}
+.f_l { float:left;} .f_r { float:right;}
+/*Reset End*/
+html,body{
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+.clearfix:after{
+  display: block;
+  clear: both;
+  content: '';
+  height: 0;
+  overflow: hidden;
+}
+.hTip { display: none;}  
+/*竖屏 css*/
+@media screen and (orientation: portrait) {
+    .hTip { display: none;} 
+}   
+/*横屏 css*/
+@media screen and (orientation: landscape) {
+    .hTip{display: block; width: 100%; height: 100%; position: fixed; z-index: 19; background-color: rgba(0, 0, 0, 0.7); top: 0; left: 0; text-align: center; color: #FFF; font-size: 4rem;display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;-webkit-justify-content: center;ustify-content: center;-webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center;align-items: center;}
+}
+.fl{float: left;}
+.fr{float: right;}
+.tac{text-align: center;}
+.tal{text-align: left;}
+html,body {width: 100%;height:100%;background: #026b98;}
+body{width: 100%;max-width: 640px;min-width: 320px;min-height: 100%;margin: 0 auto;}
+.page3{height: 100%;background:url("images/bg_end.jpg") no-repeat center top;background-size: 100% auto;overflow-x: hidden;}
+#page-wrap { width: 610px;height:123px; position: absolute;bottom:10%;left:15px;}
+.page1-con{width: 100%;padding-top: 66.55%;position: absolute;top: 0;left: 0;background: url(images/bg.jpg) no-repeat;height: 100%;-webkit-background-size: 100% auto;
+background-size: 100% auto;}
+  @-webkit-keyframes slidetounlock {0% {background-position: -720px 0;}100%{background-position: 720px 0;}}
+/*.show-end{transition:all 1s ease-out 0s;-webkit-transition:all 1s ease-out 0s;-moz-transition:all 1s ease-out 0s;-o-transition:all 1s ease-out 0s;-ms-transition:all 1s ease-out 0s;}*/
+.spe{ background-size: 100% auto; background-repeat: no-repeat;}
+.page3 .rw{width: 4.5rem; position: absolute;bottom: 0;left:0;} 
+.page3 .gs{width:2.7rem;position: absolute;bottom: 0;right:0;} 
+.page3 .inner-box a{display: block;  margin: 0px auto; width: 210px;}
+.page3 .inner-box{position: absolute; width: 100%; top:36%; left:0;}
+.shit{position: absolute;top:48%;left: 0;height: 500px;width: 100%;background-image: url("images/shit.png");-webkit-transform:scale(0);transform:scale(0);}
+.inner-box{color: #fff;text-align: center;}
+.inner-box h3{font-size: 0.3rem;color: #fff;text-align: left;width: 80%;margin: 0 auto;}
+.inner-box img{width: 43%;margin-bottom: 3px; }
+.inner-box p{font-size: 0.13rem;line-height: 0.33rem;color: #fff61c;}
+.inner-box input{font-size: 0.25rem;background: #00629d;border-radius: 7px;text-align: center;width:80%;height: 0.5rem;margin-bottom: 2px;border:2px solid #1aa8fd;display: block;margin: 0 auto;}
+.inner-box button{width: 2.5rem;height:0.85rem;font-size: 0.3rem;color:#fff;background: url(images/btn.png) no-repeat;text-align: center;margin: 2px;-webkit-background-size: 100% auto;
+background-size: 100% auto;font-family: "微软雅黑";}
+.show-end .rw,.show-end .gs{ -webkit-animation-delay: 0.2s;} 
+.show-end .rw{ left: 0; -webkit-animation: anim-left .3s .3s ease both;}  
+.show-end .gs{ right: 0; -webkit-animation: anim-right .3s .3s ease both;}  
+.zIn{position: relative;z-index: 2;}
+.down_bg{position: absolute;top:0;left:0;text-align: center;width: 100%;z-index: 100;display: none;}
+
+.btn_hasNext{width: 0.7rem;height: 0.7rem;background: url(images/btn_hasNext.png) no-repeat; margin: 0.25rem auto;   animation: moveIconUp ease 1.5s both infinite;-webkit-animation: moveIconUp ease 1.5s both infinite;-webkit-background-size: 100% auto;
+background-size: 100% auto;}
+
+/* 下拉提示按钮 */
+@keyframes moveIconUp {0% { transform: translateY(-15px); opacity:0;}50% {transform: translateY(0); opacity:1;}100% {transform: translateY(15px); opacity:0;}}
+@-webkit-keyframes moveIconUp {0% { -webkit-transform: translateY(-15px); opacity:0;}50% { -webkit-transform: translateY(0); opacity:1;}100% { -webkit-transform: translateY(-15px); opacity:0;}}
+
+@keyframes anim-left {0% { transform: translateX(-100%);}100% {transform: translateX(0);}}
+@-webkit-keyframes anim-left {0% { -webkit-transform: translateX(-100%);}100% { -webkit-transform: translateX(0);}}
+
+@keyframes anim-right {0% { transform: translateX(100%);}100% {transform: translateX(0);}}
+@-webkit-keyframes anim-right {0% { -webkit-transform: translateX(100%);}100% { -webkit-transform: translateX(0);}}

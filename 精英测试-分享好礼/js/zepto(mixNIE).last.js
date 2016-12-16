@@ -175,17 +175,3 @@ break;case"lzxxdn":o=u,s="\u6587\u7f51\u6e38\u5907\u5b57[2016]M-SLG0716\u53f7",g
   })
 })(Zepto)
 
-     // 手机适配  
-
-        if(/Android (\d+\.\d+)/.test(navigator.userAgent)){
-            var version = parseFloat(RegExp.$1);
-            if(version>2.3){
-                var phoneScale = parseInt(window.screen.width)/640;
-                document.write('<meta name="viewport" content="width=640, minimum-scale = '+ phoneScale +', maximum-scale = '+ phoneScale +', target-densitydpi=device-dpi">');
-            }else{
-                document.write('<meta name="viewport" content="width=64rem, target-densitydpi=device-dpi">');
-            }
-        }else{
-            document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
-        };
-
