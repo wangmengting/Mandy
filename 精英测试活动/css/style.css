@@ -58,7 +58,7 @@ html,body{
 .in200{z-index: 200;}
 .fz16{font-size: 2.3rem!important;}
 html,body {width: 100%;height:100%; overflow: hidden;}
-.content{width: 640px; margin: 0 auto;}
+.content{width: 640px; margin: 0 auto;height: 100%;}
 .page{position: absolute;top:0;left:0;width: 100%;height:100%;}
 .page1{z-index: 2;}
 .bg{position: absolute;top:0;left: 50%;width: 640px;height: 100%;margin-left:-320px;background: url(../images/bg.jpg) no-repeat;-webkit-background-size: 100% auto;background-size: 100% auto;   
@@ -68,15 +68,16 @@ html,body {width: 100%;height:100%; overflow: hidden;}
 /*#well {padding: 14px 20px 10px 20px;border-radius: 30px;background: -webkit-gradient(linear,left top,left bottom,color-stop(0, #010101),color-stop(1, #181818));border: 2px solid #454545;}*/
 #well h2 {    position: relative;top: 60px;text-align: center;background: -webkit-gradient(linear,left top,right top,color-stop(0, #4d4d4d),color-stop(0.4, #4d4d4d),color-stop(0.5, white),color-stop(0.6, #4d4d4d),color-stop(1, #4d4d4d)); -webkit-background-clip: text;-webkit-text-fill-color: transparent;-webkit-animation: slidetounlock 5s infinite;font-size: 3.5rem;line-height: 4rem;font-family:  "Helvetica Neue";}
 
-.slider_box{width:676px ;height:98px; overflow: hidden;z-index:999;}
-#slider {position: absolute;top:18px;left:50px;width: 146px;height: 98px;-webkit-background-size: 100% auto;
-background-size: 100% auto;}
+.slider_box{width:676px ;height:200px; overflow: hidden;z-index:999;}
+/*#slider {position: absolute;top:18px;left:50px;width: 146px;height: 98px;-webkit-background-size: 100% auto;
+background-size: 100% auto;}*/
 
   @-webkit-keyframes slidetounlock {0% {background-position: -720px 0;}100%{background-position: 720px 0;}}
 
 .page3{background-position: 0px 0px;background-repeat: no-repeat; background-size: cover}
 .ring-bg{height: 0; display: none }
-
+#page-wrap { width: 640px;height:220px; position: relative;z-index: 2;}
+    
 
 .btn-off{display: block; width: 74px; text-align: center; font-size: 15px; color:#fff; position: absolute; bottom:25px; left:50%; margin-left: -37px; z-index:9;opacity:1 }
 .btn-off .icon{display: block; width: 75px; height: 72px; background-position: 0px -300px; padding-bottom: 10px;}
@@ -106,10 +107,10 @@ background-size: 100% auto;}
 /* -webkit-transform: none;*/
 /* -ms-transform: none;*/
 /* transform: none;}*/
-.page1 .nickname{font-size: 12rem; display: block;line-height: 11rem;}
-.page1 .txt{overflow: hidden;text-align: center;padding-top: 130px;font-size: 2.8rem;color: #fff;line-height: 2.5rem;position: relative;z-index: 2}
-.page1 .inner{width: 600px;height:155px ;overflow: hidden;font-size: 2.5rem;padding-top: 76px;padding-left: 20px;color: #000;line-height: 2.8rem;position: absolute;z-index: 2;background: url(../images/textbor.png) no-repeat center top;-webkit-background-size: 100% auto;
-background-size: 100% auto;top:335px;left: 10px; }
+.page1 .nickname{font-size: 13rem; display: block;line-height: 11rem;}
+.page1 .txt{overflow: hidden;text-align: center;padding-top: 100px;font-size: 2.8rem;color: #fff;line-height: 2.5rem;position: relative;z-index: 2}
+.page1 .inner{width: 600px;height:80px ;overflow: hidden;font-size: 2.5rem;padding-top: 76px;padding-left: 20px;color: #000;line-height: 2.8rem;position: absolute;z-index: 2;background: url(../images/textbor.png) no-repeat center top;-webkit-background-size: 100% auto;
+background-size: 100% auto;top:30px;left: 10px;display: none;transform-origin: center center!important; }
 .page1 .inner span{font-size: 2rem;color: #383838;}
 .page1 .inner.cur{animation: anim-text .2s .5s ease-in-out both;-webkit-animation: anim-text .2s .5s ease-in-out both;}
 
