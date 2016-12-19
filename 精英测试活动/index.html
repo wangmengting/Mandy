@@ -127,6 +127,7 @@ for(var i = 0;i<ArrImg.length;i++){
   oImg.onload = function () {
    num ++ 
    if(num == ArrImg.length){
+      $(".inner").addClass('cur');
       $(".bg,#well").bind("swipeRight",function(){
           setTimeout(function (){
             $(".page1").hide(),
