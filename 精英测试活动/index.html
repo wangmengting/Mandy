@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+    <title></title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection"content="telephone=no, email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telphone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <meta name="renderer" content="webkit"><!-- 启用360浏览器的极速模式(webkit) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- 避免IE使用兼容模式 -->
+    <meta name="HandheldFriendly" content="true"><!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="MobileOptimized" content="320"><!-- 微软的老式浏览器 -->
+    <meta name="screen-orientation" content="portrait"><!-- uc强制竖屏 -->
+    <meta name="x5-orientation" content="portrait"><!-- QQ强制竖屏 -->
+    <meta name="x5-fullscreen" content="true"><!-- QQ强制全屏 -->
+    <meta name="x5-page-mode" content="app"><!-- QQ应用模式 -->
+    <meta name="msapplication-tap-highlight" content="no"><!-- windows phone 点击无高光 -->
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+
+</head>
+
+<body>
+  <div class="content">
+     <div class="page page1" id="page1" >
+        <div class="bg"></div>
+        <div class="txt">
+             <span class="nickname">10:00</span>
+             <span>12月21日 &nbsp;&nbsp;星期三</span>
+        </div> 
+        <div class="inner" id="inner">
+          <p>你收到了一条来自《全职猎手》的邀请</p>
+          <span>轻扫以显示更多</span>
+        </div>   
+        <div id="well">
+             <h2>&gt; 滑动以解锁</h2>
+             <div class="slider_box"><strong id="slider"></strong></div>
+        </div>
+     </div>      
+    <div class="page page3">
+      <span class="icon spe"></span>
+      <div class="slogan spe"></div>
+      <div class="shit"></div>
+      <div class="inner-box tac">
+          <img src="images/weima.png" alt="">
+          <p class="fz16">长按二维码下载游戏</p>
+          <p>（仅限安卓设备下载）</p>
+          <input type="text" placeholder="cdk:DES888888">
+          <p>领取礼包，每个角色仅可使用一次</p>
+      </div>
+  </div>
+
+ </div>
+     <!-- 横屏提示 -->
+    <section class="hTip">麻烦切换至竖屏观看！</section>
+
+    <!-- 下载提示 已hide-->
+    <div class="down_bg"><img src="images/down_bg.jpg" alt=""></div>
+
+</body>
+<script type="text/javascript" src="js/zepto(mixNIE).last.js"></script>
+<script type="text/javascript">
+ $(function(){
+ var  oBox = document.getElementById("page1");
+ var  oDiv = document.getElementById("inner");
+
+ var startX = 0 ,startY = 0 ,moveEndX = 0 ,moveEndY = 0 ,disX = 0 ,disY = 0 ,oldX = 0,oldY = 0;
+
+
+function start(e){
+   oDiv.style.transition="none";
+   e.preventDefault();
+   startX = e.changedTouches[0].clientX;
+   startY = e.changedTouches[0].clientY;
+   oldX = parseInt(getComputedStyle(this,null).left);
+   oldY = parseInt(getComputedStyle(this,null).top);
+}
+
+function move(e){
+   e.preventDefault();
+   moveEndX = e.changedTouches[0].clientX;
+   moveEndY = e.changedTouches[0].clientY;
+   disX = moveEndX - startX;
+   disY = moveEndY - startY;
+   if ( Math.abs(disX) > Math.abs(disY) && disX > 0 ) {  
+        if(disX >= 300){
+          setTimeout(function (){
+            $(".page1").hide(),
+            $(".page3").addClass("show-end");
+          },200) 
+        }
+        this.style.left = (oldX+disX) + "px";
+   }
+}
+
+
+  oDiv.addEventListener("touchstart",start,false);
+  oDiv.addEventListener("touchmove",move,false);
+
+  oDiv.addEventListener("touchend",function(){
+     if(disX < 550 || disX >= 550){
+       oDiv.style.left="0";
+       oDiv.style.transition="left 0.5s";
+     }
+  },false);
+    });
+
+
+
+
+
+var ArrImg = ["images/bg.jpg","images/bg_end.jpg"];
+var num    = 0;
+for(var i = 0;i<ArrImg.length;i++){
+  var oImg = new Image();
+  oImg.src = ArrImg[i];
+  oImg.onload = function () {
+   num ++ 
+   if(num == ArrImg.length){
+      $(".bg,#well").bind("swipeRight",function(){
+          setTimeout(function (){
+            $(".page1").hide(),
+            $(".page3").addClass("show-end");
+          },200)      
+      });   
+  }   
+}
+}
+</script>
+
+
+
+<script>
+ //禁止滑动
+ document.body.addEventListener('touchmove', function(event) {
+     event.preventDefault();
+ }, false);
+</script>
+</html>
