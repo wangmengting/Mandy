@@ -122,7 +122,7 @@ background-size: 100% auto;}
 }
 .shit{position: absolute;top:48%;left: 0;height: 500px;width: 100%;background-image: url("../images/shit.png");-webkit-transform:scale(0);transform:scale(0);}
 
-.inner-box img{width:33%;    margin-bottom: 3px;}
+.inner-box img{width:33%;    margin-bottom: 3px;    margin-top: -260px;}
 .inner-box p{color: #fff;font-size: 1.9rem;line-height: 2.4rem;}
 .inner-box input{color: #fff;font-size: 2.5rem;background: rgba(135,136,138,0.7);border-radius: 5px;text-align: center;width:35%;height: 3.5rem;margin-top: 10px;margin-bottom: 2px;}
 .page3 .slogan, .page3 .inner-box, .page3 .icon{opacity:0}
@@ -139,8 +139,8 @@ background-size: 100% auto;}
 .down_bg{position: absolute;top:0;left:0;text-align: center;width: 100%;z-index: 100;display: none;}
 
 .video-box.anim{
-  -webkit-animation:test 2.5s steps(30,end) both;
-  animation:test 2.5s steps(30,end) infinite both;
+  -webkit-animation:test 2.5s steps(50,end) both;
+  animation:test 2.5s steps(50,end) infinite both;
   background:url(../images/anim.jpg) repeat-x center center;
   /*animation-timing-function:linear;*/
   transform:scale(1.2);
@@ -149,10 +149,12 @@ background-size: 100% auto;}
 
 @-webkit-keyframes test {
   0% {background-position:0 0;}
-  100% {background-position:-3000% 0;}
+  /*20%{background-position:-500% 0;}*/
+  100% {background-position:-5000% 0;}
 }
 @keyframes test {
   0% {background-position:0 0;}
-  100% {background-position: -3000% 0;}
+  /*20%{background-position:-500% 0;}*/
+  100% {background-position: -5000% 0;}
 }
 
