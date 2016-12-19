@@ -47,7 +47,7 @@
              <div class="slider_box"><strong id="slider"></strong></div>
         </div>
      </div>      
-    <div class="page page3">
+<!--     <div class="page page3">
       <span class="icon spe"></span>
       <div class="slogan spe"></div>
       <div class="shit"></div>
@@ -58,7 +58,7 @@
           <input type="text" placeholder="cdk:DES888888">
           <p>领取礼包，每个角色仅可使用一次</p>
       </div>
-  </div>
+  </div> -->
 
  </div>
      <!-- 横屏提示 -->
@@ -96,7 +96,7 @@ function move(e){
         if(disX >= 300){
           setTimeout(function (){
             $(".page1").hide(),
-            $(".page3").addClass("show-end");
+            // $(".page3").addClass("show-end");
           },200) 
         }
         this.style.left = (oldX+disX) + "px";
@@ -131,7 +131,7 @@ for(var i = 0;i<ArrImg.length;i++){
       $(".bg,#well").bind("swipeRight",function(){
           setTimeout(function (){
             $(".page1").hide(),
-            $(".page3").addClass("show-end");
+            // $(".page3").addClass("show-end");
           },200)      
       });   
   }   
