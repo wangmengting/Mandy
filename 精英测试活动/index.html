@@ -71,7 +71,6 @@
 <script type="text/javascript" src="js/zepto(mixNIE).last.js"></script>
 <script type="text/javascript">
  $(function(){
- var  oBox = document.getElementById("page1");
  var  oDiv = document.getElementById("inner");
 
  var startX = 0 ,startY = 0 ,moveEndX = 0 ,moveEndY = 0 ,disX = 0 ,disY = 0 ,oldX = 0,oldY = 0;
@@ -95,7 +94,7 @@ function move(e){
    if ( Math.abs(disX) > Math.abs(disY) && disX > 0 ) {  
         if(disX >= 300){
           setTimeout(function (){
-            $(".page1").hide(),
+            $(".page1").hide()
             // $(".page3").addClass("show-end");
           },200) 
         }
@@ -127,10 +126,10 @@ for(var i = 0;i<ArrImg.length;i++){
   oImg.onload = function () {
    num ++ 
    if(num == ArrImg.length){
-      $(".inner").addClass('cur');
+      $(".inner").show().addClass('cur');
       $(".bg,#well").bind("swipeRight",function(){
           setTimeout(function (){
-            $(".page1").hide(),
+            $(".page1").hide()
             // $(".page3").addClass("show-end");
           },200)      
       });   
